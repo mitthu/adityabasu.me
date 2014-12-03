@@ -28,7 +28,7 @@ footer-links:
   instagram: 
   linkedin: mitthu
   pinterest: 
-  rss: mitthu # just type anything here for a working RSS icon, make sure you set the "url" above!
+  rss: true # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter: 
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
 
