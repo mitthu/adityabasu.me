@@ -9,7 +9,7 @@ name: Aditya Basu
 description: 
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: https://s.gravatar.com/avatar/bdde3b5e2b741f04be6ee9c3b6b2ff02?s=80
 
 #
 # Flags below are optional
@@ -18,10 +18,10 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble: 
-  email: 
+  email: ab.aditya.basu@gmail.com
   facebook: 
   flickr: 
-  github: barryclark/jekyll-now
+  github: mitthu
   instagram: 
   linkedin: 
   pinterest: 
