@@ -1,6 +1,7 @@
 ---
 layout: page
 published: true
+permalink: /projects/
 ---
 
 ## Projects
