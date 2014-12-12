@@ -6,6 +6,7 @@ published: true
 ---
 
 ## Research
+
 ### Compact Alphanumeric Shellcodes for x86
 **Supervisor**: Prof. Anish Mathuria, Dean Research, DA-IICT
 
