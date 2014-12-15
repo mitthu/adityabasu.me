@@ -4,6 +4,12 @@ published: true
 permalink: /projects/
 ---
 
+**DA-IICT Admissions Application**
+<span style="float: right; text-align: right;">Jul ’13 - Sept ’14</span>
+
+The application suite generates merit-lists and wait-lists of candidates based on their stream preferences and merit ranks. The suite handles all candidate applications, candidate specific emails (handled via templates), and provides an admin reporting interface. The application has been in use since 2013. The application is programmed in python using the Django framework.
+
+
 ## College Course Projects
 
 **ScratchFS**
