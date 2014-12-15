@@ -6,8 +6,9 @@ permalink: /projects/
 
 ## College Course Projects
 
-**ScratchFS** (Operating Systems)
+**ScratchFS**
 <span style="float: right;">Mar ’13 - Apr ’13</span>
+<span style="float: right;">Course: Operating Systems</span>
 
 A filesystem kernel module for linux kernel v2.4. The file system included support for read/write operation and directories.
 
