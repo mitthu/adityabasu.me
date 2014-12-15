@@ -1,10 +1,9 @@
 ---
 layout: page
+title: Projects
 published: true
 permalink: /projects/
 ---
-
-## Projects
 
 **DA-IICT Admissions Application**
 <span style="float: right; text-align: right;">Jul ’13 - Sept ’14</span>
