@@ -7,12 +7,12 @@ permalink: /projects/
 ## College Course Projects
 
 **ScratchFS** (Operating Systems)
-<span style="float: right; font-size: small">**Mar ’13 - Apr ’13**</span>
+<span style="float: right;">**Mar ’13 - Apr ’13**</span>
 
 A filesystem kernel module for linux kernel v2.4. The file system included support for read/write operation and directories.
 
 **Personal Scrapbook** (Software Engineering)
-<span style="float: right; font-size: small">**Jan ’13 - Apr ’13**</span>
+<span style="float: right;">**Jan ’13 - Apr ’13**</span>
 
 A tool to snip articles from websites and store them in cloud storage. Comprised of a browser extension and a web application. The technologies used were Python, Django and MongoDB.
 
