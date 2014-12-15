@@ -5,10 +5,10 @@ permalink: /research/
 published: true
 ---
 
-## Refereed Publication(s)
+### Refereed Publication(s)
 1. **Aditya Basu**, Anish Mathuria, Nagendra Chowdary. _Automatic Generation of Compact Alphanumeric Shellcodes for x86_. 10th International Conference on Information Systems Security, in press. (acceptance rate: 19%)
 
-## Internships
+### Internships
 **Compact Alphanumeric Shellcodes for x86** (Major Project)<br />
 **Supervisor**: Prof. Anish Mathuria
 
