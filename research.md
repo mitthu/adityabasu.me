@@ -10,7 +10,7 @@ published: true
 - Virtualisation Technology
 
 ### Refereed Publication(s)
-1. **Aditya Basu**, Anish Mathuria, Nagendra Chowdary. _Automatic Generation of Compact Alphanumeric Shellcodes for x86_. 10th International Conference on Information Systems Security, in press. (acceptance rate: 19%, [link](/research/alpha_x86/))
+1. **Aditya Basu**, Anish Mathuria, Nagendra Chowdary. _Automatic Generation of Compact Alphanumeric Shellcodes for x86_. 10th International Conference on Information Systems Security, in press. (acceptance rate: 19%, [link](/research/alpha_x86/), [ppt](https://dl.dropboxusercontent.com/u/9020146/resources/ppt/alpha-x86.pdf))
 
 ### Internships
 **Compact Alphanumeric Shellcodes for x86** (Major Project)<br />
