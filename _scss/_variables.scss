@@ -4,7 +4,7 @@
 //
 
 // Colors
-$blue: #4183C4; 
+$blue: #4183C4;
 
 // Grays
 $black: #000;
@@ -13,6 +13,15 @@ $darkGray: #333;
 $gray: #666;
 $lightGray: #eee;
 $white: #fff;
+
+$inset-color: #FAFAFA;
+$theme: $gray;
+$theme-light: lighten($theme, 40%);
+$theme-dark:  darken($theme, 15%);
+$theme-trans75: rgba($theme,.75);
+
+$link: $blue;
+$link-hover: darken($link, 15%);
 
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;
