@@ -1,0 +1,7 @@
+// Thy Mixins
+
+@mixin user-unselectable() {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+}

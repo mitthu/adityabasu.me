@@ -1,12 +1,17 @@
 /* Syntax highlighting */
 
-.highlight {
+@mixin _highlight_common() {
   background-color: #FAFAFA;
   padding: 7px 7px 7px 10px;
   border: 1px solid #ddd;
   margin: 20px 0 20px 0;
   overflow: auto;
   font-family: $font-mono;
+  width: 100%;
+}
+
+.highlight {
+  @include _highlight_common;
 
   .lineno {
     color: #ccc;
@@ -14,12 +19,36 @@
     padding: 0 5px;
     border-right: 1px solid #ccc;
 
+    @include user-unselectable;
+  }
+}
+
+// Table based code highlight
+.highlighttable {
+  @include _highlight_common;
+  border-collapse: collapse;
+
+  .highlight {
+    border:none;
+    outline:none;
+    margin: 0px;
+  }
+
+  .linenos {
+    color: #ccc;
+    padding: 0 5px;
+    border-right: 1px solid #ccc;
+    vertical-align: middle;
+    text-align: right;
+
     // Make line numbers unselectable.
     -webkit-user-select: none;
     -moz-user-select: none;
     -o-user-select: none;
   }
+}
 
+.highlight {
    // Syntax Highlight
     .c     { color: #998; } // Comment
     .err   { color: #a61717; background-color: #e3d2d2 } // Error
