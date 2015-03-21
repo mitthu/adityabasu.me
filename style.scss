@@ -71,9 +71,7 @@ a {
 
   &:hover, &:active {
     color: $link-hover;
-//  	text-decoration: underline;
-//    background: white;
-//    text-shadow: 0 0 10px $theme-trans75;
+  	text-decoration: underline;
   }
 }
 
@@ -140,10 +138,6 @@ img {
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
-
-//
-// .masthead
-//
 
 .wrapper-masthead {
   margin-bottom: 50px;
@@ -222,10 +216,6 @@ nav {
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
-
-    &:hover, &:active {
-      text-decoration: underline;
-    }
 
     @include mobile {
       margin: 0 10px;
