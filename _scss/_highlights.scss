@@ -44,10 +44,7 @@
     vertical-align: middle;
     text-align: right;
 
-    // Make line numbers unselectable.
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
+    @include user-unselectable;
   }
 }
 
