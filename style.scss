@@ -1,13 +1,9 @@
 ---
 ---
 
-//
-// IMPORTS
-//
-
 @import "_reset";
 @import "_variables";
-// Syntax highlighting @import is at the bottom of this file
+@import "_highlights";
 
 /**************/
 /* BASE RULES */
@@ -72,10 +68,10 @@ a {
   color: $link;
   text-decoration: none;
 	cursor: pointer;
-//	text-decoration: underline;
 
   &:hover, &:active {
     color: $link-hover;
+//  	text-decoration: underline;
 //    background: white;
 //    text-shadow: 0 0 10px $theme-trans75;
   }
@@ -193,9 +189,7 @@ img {
 .site-name {
   margin: 0;
   color: $darkGray;
-  cursor: pointer;
   font-family: $helveticaNeue; 
-//  font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
 }
@@ -212,20 +206,18 @@ img {
 
 nav {
   float: right;
-  padding-top: 12px; // @TODO: Vertically middle align
+  padding-top: 12px;
   margin: 0px;
   font-family: $helveticaNeue;
   font-size: 18px;
 
   @include mobile {
     float: none;
-//    margin-top: 9px;
     display: block;
     font-size: 16px;
   }
 
   a {
-//    margin-left: 0.5em;
     color: $darkGray;
     text-align: right;
     font-weight: 300;
@@ -308,7 +300,3 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
-
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "_highlights";
