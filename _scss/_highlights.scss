@@ -43,6 +43,7 @@
     border-right: 1px solid #ccc;
     vertical-align: middle;
     text-align: right;
+    min-width: 2em;
 
     @include user-unselectable;
   }
