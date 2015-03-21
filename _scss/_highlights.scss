@@ -5,9 +5,11 @@
   padding: 7px 7px 7px 10px;
   border: 1px solid #ddd;
   margin: 20px 0 20px 0;
-  overflow: auto;
   font-family: $font-mono;
   width: 100%;
+  // Need display: block; for scrollbars to appear.
+  display: block;
+  overflow: auto;
 }
 
 .highlight {
@@ -32,6 +34,7 @@
     border:none;
     outline:none;
     margin: 0px;
+    width: 100%;
   }
 
   .linenos {
