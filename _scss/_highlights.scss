@@ -17,9 +17,11 @@
 
   .lineno {
     color: #ccc;
-    display: inline-block;
     padding: 0 5px;
     border-right: 1px solid #ccc;
+    vertical-align: middle;
+    text-align: right;
+    min-width: 2em;
 
     @include user-unselectable;
   }
@@ -39,6 +41,12 @@ figure.code {
     background: linear-gradient(#FFF, #F0F0F0 6%, #E5E5E5 90%, #DDD);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+    font-family: $font;
+    font-size: $font-size-code-caption;
+  }
+
+  .highlight {
+    margin: 0px;
   }
 }
 
