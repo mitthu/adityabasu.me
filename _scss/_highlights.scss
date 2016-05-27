@@ -47,6 +47,12 @@ figure.code {
 
   .highlight {
     margin: 0px;
+    padding: 0px;
+  }
+
+  // Add space between vertical line and code
+  .code {
+    padding-left: 6px;
   }
 }
 
