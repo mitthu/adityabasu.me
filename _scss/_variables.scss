@@ -10,11 +10,23 @@ $gray: #666;
 $lightGray: #eee;
 $white: #fff;
 
-// Font stacks
+/*
+ * Font stacks:
+ * - Make sure to remove @import of unused fonts.
+ * - Too many @import's will increase page load time.
+ */
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
 $bitstream: 'Bitstream Vera Sans Mono','Courier', monospace;
+
+// Roboto
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,700italic,400italic);
+$roboto: 'Roboto', sans-serif;
+
+// Roboto Mono font
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,700,400italic,700italic);
+$robotomono: 'Roboto Mono',;
 
 // Theme Specific
 $theme: $gray;
@@ -25,9 +37,17 @@ $theme-trans75: rgba($theme,.75);
 $link: $blue;
 $link-hover: darken($link, 15%);
 
-$font: $helvetica;
-$font-head: $helveticaNeue;
-$font-mono: $bitstream;
+$font: $roboto;
+$font-head: $roboto;
+$font-mono: $robotomono;
+
+$font-size-normal: 18px;
+$font-size-code: 14px;
+$font-size-code-caption: 15px;
+$font-size-h1: $font-size-normal + 12;
+$font-size-h2: $font-size-normal + 6;
+$font-size-h3: $font-size-normal + 2;
+$font-size-h4: $font-size-normal;
 
 // Mobile breakpoints
 @mixin mobile {
