@@ -77,3 +77,8 @@ exclude:
     - Gemfile.lock
     - LICENSE
     - README.md
+    - Vagrantfile
+
+# Bind to all interfaces for developement
+host: 0.0.0.0
+
