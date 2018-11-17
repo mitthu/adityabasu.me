@@ -48,8 +48,13 @@ end
 
 ### Javascript
 
+#### Span
+Inline code `like this`.
+
+#### Block
+
 ```javascript
-var sigmoidGate = function() { 
+var sigmoidGate = function() {
   // helper function
   this.sig = function(x) { return 1 / (1 + Math.exp(-x)); };
 };
@@ -65,3 +70,12 @@ sigmoidGate.prototype = {
   }
 }
 ```
+
+No line numbers:
+```javascript
+var sigmoidGate = function() {
+  // helper function
+  this.sig = function(x) { return 1 / (1 + Math.exp(-x)); };
+};
+```
+{: .nolineno}
