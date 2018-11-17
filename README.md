@@ -7,15 +7,35 @@ The jekyll stuff for my blog.
 - [Github Pages: Gem Versions](https://pages.github.com/versions/)
 
 ```
-# Install jekyll
-gem install bundler
-bundle install
+# Install dependencies
+sudo gem install github-pages
 
 # To build and preview the website
-bundle exec jekyll serve
+jekyll serve
 ```
 
 ### To include code
+#### Method #1
+<pre>
+```ruby
+def print_hi(name)
+  puts "Hi, #{name}!"
+end
+```
+</pre>
+
+To hide line numbers -
+
+<pre>
+```ruby
+def print_hi(name)
+  puts "Hi, #{name}!"
+end
+```
+{: .nolineno}
+</pre>
+
+#### Method #2
 ```
 {% include code.html caption="A ruby script" %}
 {% highlight ruby linenos %}
