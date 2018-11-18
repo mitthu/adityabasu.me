@@ -41,7 +41,7 @@ google_analytics: UA-57011121-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: http://www.adityabasu.me
+url: https://www.adityabasu.me
 
 # If you're hosting your site at a Project repository on GitHub pages 
 # (http://yourusername.github.io/repository-name)
@@ -94,4 +94,3 @@ exclude:
 
 # Bind to all interfaces for developement
 host: 0.0.0.0
-
