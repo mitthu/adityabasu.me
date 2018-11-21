@@ -9,7 +9,7 @@ toc: true
 # Presentation
 - [Link to Google Slides](https://docs.google.com/presentation/d/e/2PACX-1vSnRWlYCYhHttURB1ZHugpTm2X2rc36oPuMAp-iNXJO55WLyjqHLdFVlvh1Kg5Pi-IBlF26PeAyW3kb/pub?start=false&loop=false&delayms=3000)
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSnRWlYCYhHttURB1ZHugpTm2X2rc36oPuMAp-iNXJO55WLyjqHLdFVlvh1Kg5Pi-IBlF26PeAyW3kb/embed?start=false&loop=false&delayms=60000" frameborder="0" width="640" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<!-- <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSnRWlYCYhHttURB1ZHugpTm2X2rc36oPuMAp-iNXJO55WLyjqHLdFVlvh1Kg5Pi-IBlF26PeAyW3kb/embed?start=false&loop=false&delayms=60000" frameborder="0" width="640" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> -->
 
 # Code
 
@@ -80,3 +80,33 @@ var sigmoidGate = function() {
 };
 ```
 {: .nolineno}
+
+## Image
+{% responsive_image path: 'images/404.jpg' width: 20 %}
+
+youtube_issues
+{% responsive_image path: 'assets/youtube_issues.png' alt: 'YT issues' %}
+
+## Installing `imagemin`
+
+* [GitHub: imagemin-cli](https://github.com/imagemin/imagemin-cli)
+  * [Fix for global npm install](https://github.com/npm/npm/issues/17268)
+
+```bash
+sudo npm install --global imagemin-cli
+sudo npm install --global imagemin-gifsicle --unsafe-perm=true --allow-root
+sudo npm install --global imagemin-pngquant --unsafe-perm=true --allow-root
+sudo npm install --global imagemin-jpegtran --unsafe-perm=true --allow-root
+sudo npm install --global imagemin-optipng --unsafe-perm=true --allow-root
+```
+
+Running it on png files
+```bash
+# Original file size: 1.6 MB
+# Resized file size: 501 KB
+imagemin --plugin=pngquant youtube_issues.png >plugin.png
+
+# Original file size: 1.6 MB
+# Resized file size: 1.2 MB
+imagemin youtube_issues.png >no_plugin.png
+```
