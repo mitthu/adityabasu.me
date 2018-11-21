@@ -6,6 +6,9 @@ published: true
 toc: true
 ---
 
+# Posts
+{% include posts.html category="draft" %}
+
 # Presentation
 - [Link to Google Slides](https://docs.google.com/presentation/d/e/2PACX-1vSnRWlYCYhHttURB1ZHugpTm2X2rc36oPuMAp-iNXJO55WLyjqHLdFVlvh1Kg5Pi-IBlF26PeAyW3kb/pub?start=false&loop=false&delayms=3000)
 
@@ -84,7 +87,6 @@ var sigmoidGate = function() {
 ## Image
 Width = 50% (no caption)
 {% responsive_image path: 'images/404.jpg' width: 400px %}
-
 
 Width = 100% (default & with caption)
 {% responsive_image path: 'images/404.jpg' caption: 'width: 100%' %}
