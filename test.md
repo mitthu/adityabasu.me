@@ -82,10 +82,17 @@ var sigmoidGate = function() {
 {: .nolineno}
 
 ## Image
-{% responsive_image path: 'images/404.jpg' width: 20 %}
+Width = 50% (no caption)
+{% responsive_image path: 'images/404.jpg' width: 50% %}
 
-youtube_issues
-{% responsive_image path: 'assets/youtube_issues.png' alt: 'YT issues' %}
+
+Width = 100% (default & with caption)
+{% responsive_image path: 'images/404.jpg' caption: 'width: 100%' %}
+
+
+Width = 80% (with caption)
+{% responsive_image path: 'images/404.jpg' width: 80% caption: 'width: 80%' template: _includes/img/srcset_caption.html %}
+
 
 ## Installing `imagemin`
 

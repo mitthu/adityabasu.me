@@ -1,0 +1,27 @@
+/* Image */
+figure.image {
+  // font
+  font-family: $font-img;
+  font-size: $font-size-img-caption;
+
+  // visual properties
+  border: 10px solid #ddd;
+  background-color: #ddd;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+
+  img {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  figcaption {
+    font-weight: bold;
+    background-color: #ddd;
+    border-top: 5px solid #ddd;
+    width: 100%;
+  }
+}
