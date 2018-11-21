@@ -4,3 +4,6 @@ http://adityabasu.netlify.com/* http://www.adityabasu.me/:splat 301!
 
 # Use https instead of http
 http://www.adityabasu.me/* https://www.adityabasu.me/:splat 301!
+
+# 404 page
+/* /404/ 404
