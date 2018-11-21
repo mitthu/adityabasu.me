@@ -78,7 +78,7 @@ kramdown:
 
 # Configure the responsive_image plugin
 responsive_image:
-  template: _includes/img/srcset_caption.html
+  template: _includes/img/srcset-caption.html
 
   # [Optional, Default: assets]
   # The base directory where assets are stored. This is used to determine the

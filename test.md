@@ -93,7 +93,7 @@ Width = 100% (default & with caption)
 
 
 Width = 80% (with caption)
-{% responsive_image path: 'images/404.jpg' width: 80% caption: 'width: 80%' template: _includes/img/srcset_caption.html %}
+{% responsive_image path: 'images/404.jpg' width: 80% caption: 'width: 80%' template: _includes/img/srcset-caption.html %}
 
 
 ## Installing `imagemin`
