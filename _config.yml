@@ -141,6 +141,10 @@ responsive_image:
   extra_images:
     - images/404.jpg
 
+# Configure favicon
+favicon:
+  svg: /images/favicon.svg
+  png: /images/favicon.png
 
 # The release of Jekyll Now that you're using
 version: v1.0.0

@@ -17,6 +17,11 @@
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }}{% if page.description %}– {{ page.description }}{% endif %}" href="{% if site.feedburner_url %}{{ site.feedburner_url }}?format=xml{% else %}{{ site.baseurl }}/feed.xml{% endif %}" />
 
+    <!-- Add favicons -->
+    <link rel="icon" type="image/svg" href="{{ site.favicon.svg }}">
+    <link rel="icon" type="image/png" href="{{ site.favicon.png }}">
+
+    <!-- SEO tags -->
     {% seo %}
   </head>
 
