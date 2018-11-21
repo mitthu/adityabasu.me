@@ -1,0 +1,22 @@
+<!-- Get the key of the collections -->
+{% for key in site.collections %}
+	{% if key.label == include.name %}
+		{% assign this_collection = key %}
+	{% endif %}
+{% endfor %}
+
+{% if this_collection.docs != empty %}
+<div class="posts">
+  <h3 class="category">{{ this_collection.name }}</h3>
+  <span class="category-description"># {{ this_collection.description }}</span>
+	{% for post in this_collection.docs %}
+	  <ul>
+	  <li class="post">
+	    <span class="post-date">{{ post.date | date_to_string }} &raquo;</span> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+	  </li>
+	  </ul>
+	{% endfor %}
+</div>
+
+<br />
+{% endif %}

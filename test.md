@@ -9,6 +9,15 @@ toc: true
 # Posts
 {% include posts.html category="draft" %}
 
+# Archvied pages
+* [Projects]({% link archive/projects.md %})
+* [Research]({% link archive/research.md %})
+* [Blog]({% link archive/blog.html %})
+
+
+# Docs
+* [Linking in Jekyll](https://jekyllrb.com/docs/liquid/tags/#link)
+
 # Presentation
 - [Link to Google Slides](https://docs.google.com/presentation/d/e/2PACX-1vSnRWlYCYhHttURB1ZHugpTm2X2rc36oPuMAp-iNXJO55WLyjqHLdFVlvh1Kg5Pi-IBlF26PeAyW3kb/pub?start=false&loop=false&delayms=3000)
 

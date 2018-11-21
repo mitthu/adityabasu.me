@@ -2,7 +2,7 @@
 layout: post
 title: Awesome Draft
 category: draft
-published: true
+published: false
 ---
 
 {%- include basepaths.html -%}

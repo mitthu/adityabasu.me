@@ -1,0 +1,19 @@
+---
+layout: post
+title: Awesome Draft
+category: draft
+published: false
+---
+
+{%- include basepaths.html -%}
+
+It's a draft from the Hyde Android app. Yah!
+
+## Testing for images
+
+{% responsive_image_block %}
+  path: {{ image_path }}/404.jpg
+  alt: trying out stuff
+  width: 40%
+  caption: Loading via Dynamic Path
+{% endresponsive_image_block %}

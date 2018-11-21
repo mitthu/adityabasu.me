@@ -55,6 +55,27 @@ baseurl: ""
 # Setting the timezone
 timezone: America/New_York
 
+# Add collections
+collections_dir: collections
+collections:
+  posts:
+    name: "Blog"
+    description: "misc. thoughts"
+    output: true
+    permalink: /blog/:year/:month/:title/
+
+  research:
+    name: "Academics"
+    description: "stuff that I have worked on"
+    output: true
+    permalink: /:collection/:title/
+
+  snippets:
+    name: "Snippets"
+    description: "helpful code fragments"
+    output: true
+    permalink: /:collection/:year/:month/:title/
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #

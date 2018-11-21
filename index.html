@@ -3,8 +3,8 @@ layout: default
 published: true
 ---
 
-<div class="posts">
-  <h3 class="category">Academics</h3>
-  <p class="category-description">Work I have been doing lately.</p>
-  {% include posts.html category="research" %}
-</div>
+{% include collections.html name="research" %}
+
+{% include collections.html name="posts" %}
+
+{% include collections.html name="snippets" %}
