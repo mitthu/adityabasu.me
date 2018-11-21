@@ -90,6 +90,7 @@ plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - github-pages
   - jekyll-seo-tag
+  - jekyll-toc
 
 # Exclude these files from your production _site
 exclude:

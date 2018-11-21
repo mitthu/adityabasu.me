@@ -3,6 +3,7 @@ layout: page
 title: Test
 permalink: /test/
 published: true
+toc: true
 ---
 
 # Presentation
