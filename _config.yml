@@ -92,5 +92,9 @@ exclude:
     - README.md
     - Vagrantfile
 
+# Include the following files in the production _site
+include:
+    - _redirects
+
 # Bind to all interfaces for developement
 host: 0.0.0.0

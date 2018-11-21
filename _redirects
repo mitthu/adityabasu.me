@@ -1,0 +1,6 @@
+# Redirect default Netlify subdomain to primary domain. Also necessary for SEO purposes.
+https://adityabasu.netlify.com/* https://www.adityabasu.me/:splat 301!
+http://adityabasu.netlify.com/* http://www.adityabasu.me/:splat 301!
+
+# Use https instead of http
+http://www.adityabasu.me/* https://www.adityabasu.me/:splat 301!
