@@ -14,9 +14,8 @@ Usage:
 {% endfor %}
 {% endcapture %}
 
-<figure class="image">
-	<img src="/{{ path }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines }} /{{ path }} {{ original.width }}w" 
-	{% if width %} width="{{width}}" {% endif %} />
+<figure class="image {% if caption %} image-caption {% endif %}" {% if width %} style="max-width: {{width}};" {% endif %}>
+	<img src="/{{ path }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines }} /{{ path }} {{ original.width }}w" />
 	
 	{% if caption %}
 		<figcaption>{{ caption }}</figcaption>

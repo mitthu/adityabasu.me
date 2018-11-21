@@ -83,7 +83,7 @@ var sigmoidGate = function() {
 
 ## Image
 Width = 50% (no caption)
-{% responsive_image path: 'images/404.jpg' width: 50% %}
+{% responsive_image path: 'images/404.jpg' width: 400px %}
 
 
 Width = 100% (default & with caption)
