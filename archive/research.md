@@ -2,7 +2,7 @@
 layout: page
 title: Research
 permalink: /research/
-published: true
+published: false
 ---
 
 ### Fields of Interest

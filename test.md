@@ -10,9 +10,9 @@ toc: true
 {% include posts.html category="draft" %}
 
 # Archvied pages
-* [Projects]({% link archive/projects.md %})
-* [Research]({% link archive/research.md %})
-* [Blog]({% link archive/blog.html %})
+* link archive/projects.md
+* link archive/research.md
+* link archive/blog.html
 
 
 # Docs

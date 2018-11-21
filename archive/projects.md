@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-published: true
+published: false
 permalink: /projects/
 ---
 
