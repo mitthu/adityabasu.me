@@ -171,6 +171,7 @@ exclude:
     - LICENSE
     - README.md
     - Vagrantfile
+    - archive
 
 # Include the following files in the production _site
 include:
