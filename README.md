@@ -8,7 +8,7 @@ The jekyll stuff for my blog.
 
 ```
 # Install dependencies
-sudo gem install github-pages
+bundler install
 
 # To build and preview the website
 jekyll serve
