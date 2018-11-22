@@ -2,7 +2,12 @@
 layout: post
 title: Generating favicon for personal blog
 published: true
+excerpt_separator: <!--more-->
 ---
+
+We will go through creating a favicon (an avatar), converting it to necessary image format(s), and finally configuring webpages to use it.
+
+<!--more-->
 
 {%- include basepaths.html -%}
 
