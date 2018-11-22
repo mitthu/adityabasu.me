@@ -27,6 +27,9 @@ body {
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
+
+  /* Make sure floats don't come outsize the border */
+  overflow: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -35,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 
   line-height: 1.7;
-  margin: 1em 0 15px;
+  margin: 0 0 15px;
   padding: 0;
 
   @include mobile {
@@ -158,28 +161,32 @@ img {
 
 .site-avatar {
   float: left;
+  overflow: auto;
+  margin-right: 2em;
   width: 150px;
-  height: 150px;
-  margin-right: 15px;
 
   @include mobile {
     float: none;
     display: block;
-    margin: 0 auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   img {
-    border-radius: 0px;
+    width: 100%;
   }
 }
 
 .site-info {
   float: left;
+  width: 33%;
 
   @include mobile {
     float: none;
     display: block;
     margin: 0 auto;
+    width: auto;
   }
 }
 
@@ -207,11 +214,15 @@ nav {
   margin: 0px;
   font-family: $font-head;
   font-size: 18px;
+  width: 66%;
+  text-align: right;
 
   @include mobile {
     float: none;
     display: block;
     font-size: 16px;
+    width: auto;
+    text-align: center;
   }
 
   a {
