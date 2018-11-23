@@ -274,8 +274,13 @@ nav {
   margin: 0px;
 }
 
+.post:last-of-type {
+  margin-bottom: 0;
+}
+
 .post {
   font-size: 18px;
+  margin-bottom: 1.5ex;
 
   blockquote {
     margin: 1.8em .8em;
