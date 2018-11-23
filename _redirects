@@ -5,5 +5,8 @@ http://adityabasu.netlify.com/* http://www.adityabasu.me/:splat 301!
 # Use https instead of http
 http://www.adityabasu.me/* https://www.adityabasu.me/:splat 301!
 
+# Redirect naked domain to www (https version)
+http://adityabasu.me/* https://www.adityabasu.me/:splat 302!
+
 # 404 page
 /* /404/ 404
