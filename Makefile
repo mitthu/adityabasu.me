@@ -1,8 +1,13 @@
 OS := $(shell uname)
 
-.PHONY: dev
-dev:
+.PHONY: drafts
+drafts:
 	bundle exec jekyll serve --drafts --trace
+
+# Run the production version of the site
+.PHONY: prod
+prod:
+	bundle exec jekyll serve --trace
 
 .PHONY: depsinstall
 depsinstall:

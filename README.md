@@ -8,10 +8,14 @@ The jekyll stuff for my blog.
 
 ```
 # Install dependencies
-bundler install
+make depsinstall
 
-# To build and preview the website
-jekyll serve
+# Preview website with drafts
+make drafts # or
+make
+
+# Preview website (production)
+make prod
 ```
 
 ### To include code
