@@ -16,6 +16,9 @@ make
 
 # Preview website (production)
 make prod
+
+# Fix issues with ruby gems
+make doctor
 ```
 
 ### To include code

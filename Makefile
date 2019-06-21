@@ -26,3 +26,8 @@ endif
 	@echo "Installing dependencies..."
 	@bundle install
 
+.PHONY: doctor
+doctor:
+	sudo gem update --system --no-doc
+	sudo gem update --no-doc
+
