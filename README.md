@@ -21,6 +21,11 @@ make prod
 make doctor
 ```
 
+### Include Table of Contents
+```
+{% include toc.html %}
+```
+
 ### To include code
 #### Method #1
 <pre>

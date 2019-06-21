@@ -239,6 +239,29 @@ nav {
   }
 }
 
+.toc {
+	padding-top: 12px;
+	margin: 0px;
+	font-family: $font-head;
+
+	.toc-head {
+		@extend h4;
+	}
+
+	/* kramdown encloses all html tags in <p> because of
+	 * "parse_block_html: true". Look at _include/toc.html.
+	 */
+	p {
+		padding: 0px;
+		margin: 0px;
+	}
+
+	#markdown-toc {
+		padding-top: 0px;
+		margin-top: 4px;
+	}
+}
+
 //
 // .main
 //
