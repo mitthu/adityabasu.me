@@ -61,6 +61,7 @@ end
 ## Miscellaneous
 - Font preview and CDNs,
   * [Google Fonts](https://www.google.com/fonts)
+- [Group posts by year](https://stackoverflow.com/questions/19086284/jekyll-liquid-templating-how-to-group-blog-posts-by-year/20777475#20777475)
 
 ## Credits
 - [JekyllNow Theme](https://github.com/barryclark/jekyll-now)

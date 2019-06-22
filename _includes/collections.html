@@ -10,7 +10,7 @@
   <h3 class="category">{{ this_collection.name }}</h3>
   <span class="category-description"># {{ this_collection.description }}</span>
 	<ul>
-	  {% for post in this_collection.docs %}
+	  {% for post in this_collection.docs reversed %}
 	  <li class="post">
 	    <span class="post-date">{{ post.date | date_to_string }} &raquo;</span> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 	    <div class="post-excerpt">{{post.excerpt}}</div>
