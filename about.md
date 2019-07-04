@@ -5,12 +5,19 @@ permalink: /about/
 published: true
 ---
 
-<!-- <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a> -->
-
-<a href="{{ site.baseurl }}/" class="site-avatar">
+<!-- <a href="{{ site.baseurl }}/" class="site-avatar">
 	<img style="max-width: 100%" src="{{ site.favicon.svg }}" />
-</a>
+</a> -->
 
-I graduated from [Dhirubhai Ambani, Institue for Information and Communication Technology](http://www.daiict.ac.in/daiict/index.html) (2014 batch). I am currently working as a _System Operations_ engineer at [Media.net](http://www.media.net/), Mumbai.
+I am a PhD candidate at [The Pennsylvania State University](https://www.psu.edu/)
+and part of the [SIIS lab](http://siis.cse.psu.edu/).
+My research focus is in OS Kernel Security, specifically Linux.
+
+### Experience
+* Software Engineering Intern @[Google](https://www.google.com/), Cambridge `// May 2019 - Aug 2019`
+* Research Intern @[NIO](https://www.nio.com/), San Jose `// May 2018 - Aug 2018`
+* System Operations Engineer @[Media.net](http://www.media.net/), Mumbai `// May 2014 - July 2016`
+* My under-graduation was from [Dhirubhai Ambani Institute](https://www.daiict.ac.in). `// 2014 batch`
+
 
 Links: [Resume](https://github.com/mitthu/resume/files/2337305/resume.pdf)
