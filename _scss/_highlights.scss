@@ -16,7 +16,7 @@
 
 @mixin _highlight_common() {
   background-color: $theme-code-background;
-  padding: 0px;
+  padding: 8px;
   border: 1px solid #ddd;
   width: 100%;
   // Need display: block; for scrollbars to appear.
@@ -35,7 +35,6 @@
 
 .lineno {
   color: #ccc;
-  background: #fff;
   padding: 0 5px;
   border-right: 1px solid #ccc;
   vertical-align: middle;
@@ -111,10 +110,22 @@ div.highlighter-rouge {
   }
 }
 
-// when nolineno class is present, hide the line numbers
+// do not display line numbers by default
+.lineno {
+  display: none;
+}
+
+// DEPRECATED: when nolineno class is present, hide the line numbers
 .nolineno {
   .lineno {
     display: none;
+  }
+}
+
+// when nolineno class is present, hide the line numbers
+.showlineno {
+  .lineno {
+    display: block;
   }
 }
 

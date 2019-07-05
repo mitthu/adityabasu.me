@@ -36,7 +36,7 @@ end
 ```
 </pre>
 
-To hide line numbers -
+To show line number(s) -
 
 <pre>
 ```ruby
@@ -44,7 +44,7 @@ def print_hi(name)
   puts "Hi, #{name}!"
 end
 ```
-{: .nolineno}
+{: .showlineno}
 </pre>
 
 #### Method #2
