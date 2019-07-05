@@ -20,14 +20,14 @@ For this I used [svgexport](https://github.com/shakiba/svgexport). This utility 
 
 1. First you will need to install `npm`. Go to [this link](https://nodejs.org/en/download/) to download and install `npm`.
 2. To install `svgexport` on mac type the following in the terminal:
-    ```bash
-    sudo npm install --global --unsafe-perm=true --allow-root svgexport
-    ```
+   ```bash
+   sudo npm install --global --unsafe-perm=true --allow-root svgexport
+   ```
     {: .nolineno}
 3. Now to generate the `png` version of the favicon, use
-    ```bash
-    svgexport images/favicon.svg images/favicon.png 64x
-    ```
+   ```bash
+   svgexport images/favicon.svg images/favicon.png 64x
+   ```
     {: .nolineno}
 
 For me, the file sizes were:
