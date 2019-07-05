@@ -6,7 +6,7 @@
 
 @mixin _code_inline_decoration() {
   padding: 0.2ex;
-  background-color: $theme-lighter;
+  background-color: $theme-code-background;
 }
 
 @mixin _box_decoration() {
@@ -92,6 +92,11 @@ figure.code {
 // set code background for rogue-based code highlighting
 pre.highlight {
   background-color: $theme-code-background;
+}
+
+// inline fenced code
+code.highlighter-rouge {
+  padding: 4px;
 }
 
 // rogue-based code highlight (```code```)
