@@ -1,4 +1,8 @@
 OS := $(shell uname)
+export GEM_HOME := $(HOME)/.ruby
+export GEM_PATH := $(HOME)/.ruby
+export BUNDLE_PATH := $(HOME)/.ruby
+export PATH := $(HOME)/.ruby/bin:$(PATH)
 
 .PHONY: drafts
 drafts:
@@ -18,16 +22,17 @@ ifeq ($(OS), Linux)
 endif
 
 ifeq ($(OS), Darwin)
-	@# Nothing for now!
+	@brew install imagemagick@6
+	@brew link --force imagemagick@6
 endif
-
+	@mkdir -p $(GEM_HOME)
 	@echo "Installing gem: bundler..."
-	@sudo gem install bundler
+	@gem install bundler -v "~>2.0"
 	@echo "Installing dependencies..."
 	@bundle install
 
 .PHONY: doctor
 doctor:
-	sudo gem update --system --no-doc
-	sudo gem update --no-doc
+	gem update --system --no-doc
+	gem update --no-doc
 

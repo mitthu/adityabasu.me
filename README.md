@@ -7,7 +7,7 @@ The jekyll stuff for my blog.
 - [Github Pages: Gem Versions](https://pages.github.com/versions/)
 
 ```
-# Install dependencies
+# Install dependencies; gems are installed in: ~/.ruby
 make depsinstall
 
 # Preview website with drafts
