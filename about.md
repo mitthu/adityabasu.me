@@ -19,9 +19,8 @@ My research focus is in OS Kernel Security, specifically Linux.
 * System Operations Engineer @[Media.net](http://www.media.net/), Mumbai `// May 2014 - July 2016`
 * My under-graduation was from [Dhirubhai Ambani Institute](https://www.daiict.ac.in). `// 2014 batch`
 
-
 **Links.**
-[Resume](https://github.com/mitthu/resume/files/2337305/resume.pdf)
+[Resume](https://resume.0xa.fun/resume.pdf)
 
 **Some legal stuff.**
 All content on this website are solely my opinions.
