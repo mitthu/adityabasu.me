@@ -1,4 +1,6 @@
 # Blog
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7f2d2399-781d-448b-a637-c3f64dccede5/deploy-status)](https://app.netlify.com/sites/adityabasu/deploys)
+
 The jekyll stuff for my blog.
 
 ## Guidelines
