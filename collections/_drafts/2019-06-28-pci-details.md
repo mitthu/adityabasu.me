@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Quirks about PCI
-tags: 
+tags:
   - specifications
   - protocol
   - pci
@@ -9,8 +9,10 @@ tags:
 
 {%- include basepaths.html -%}
 
+> **tl;dr** Notes while working with PCI.
+
 The 64-bit PCI registers are broken up as in to two 32-bit registers.
-For example,
+So,
 
 	REGISTER is represented as
 		REGISTER_1
