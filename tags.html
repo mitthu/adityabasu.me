@@ -1,0 +1,30 @@
+---
+layout: default
+published: true
+---
+
+{% assign alldocs = site.documents %}
+{% assign grouptag =  alldocs | map: 'tags' | join: ','  | split: ','  | group_by: tag %}
+
+<h2># tags</h2>
+{% for tag in grouptag %}
+        {% if tag != grouptag.first %}&bull;{% endif %}
+        <a href="#{{- tag.name -}}">{{ tag.name }} ({{tag.size}})</a>
+{% endfor %}
+<br />
+<br />
+
+<h2># posts</h2>
+{%- for tag in grouptag -%}
+        <h4>
+                <a id="{{- tag.name -}}"></a>
+                {{ tag.name }} // {{tag.size}}
+        </h4>
+        {%- for document in alldocs -%}
+                <ul>
+                {% if document.tags contains tag.name %}
+                        <li><a href="{{document.url}}">{{- document.title -}}</a></li>
+                {% endif %}
+                </ul>
+        {%- endfor -%}
+{%- endfor -%}
