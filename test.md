@@ -4,6 +4,7 @@ title: Test
 permalink: /test/
 published: true
 toc: true
+sitemap: false
 ---
 
 # Posts
