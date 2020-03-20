@@ -1,14 +1,40 @@
 ---
 layout: page
-title: Test
-permalink: /test/
+title: Start Here
+permalink: /start/
 published: true
 toc: true
 sitemap: false
 ---
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7f2d2399-781d-448b-a637-c3f64dccede5/deploy-status)](https://app.netlify.com/sites/adityabasu/deploys)
+
+# Template
+[https://prose.io/#mitthu/adityabasu.me/tree/master/collections/_posts](https://prose.io/#mitthu/adityabasu.me/tree/master/collections/_posts "Create a post")
+
+```
+# Front matter
+layout: post
+excerpt: >-
+  Using the mr tool, you can issue commands to multiple repositories in
+  parallel. You can pull new changes, do simultaneous commits or just get the
+  last commit log.
+tags:
+  - git
+  - version control
+  - mr
+  - pushover
+  - sysad
+
+# Content
+{{ "{%- include basepaths.html " }}-%}
+```
+
+
 # Posts
-{% include posts.html category="draft" %}
+```
+include posts.html category="draft"
+```
 
 # Archvied pages
 * link archive/projects.md
@@ -96,13 +122,22 @@ var sigmoidGate = function() {
 
 ## Image
 Width = 50% (no caption)
+```
+responsive_image path: 'images/404.jpg' width: 400px
+```
 {% responsive_image path: 'images/404.jpg' width: 400px %}
 
 Width = 100% (default & with caption)
+```
+responsive_image path: 'images/404.jpg' caption: 'width: 100%'
+```
 {% responsive_image path: 'images/404.jpg' caption: 'width: 100%' %}
 
 
 Width = 80% (with caption)
+```
+responsive_image path: 'images/404.jpg' width: 80% caption: 'width: 80%' template: _includes/img/srcset-caption.html
+```
 {% responsive_image path: 'images/404.jpg' width: 80% caption: 'width: 80%' template: _includes/img/srcset-caption.html %}
 
 
