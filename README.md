@@ -4,6 +4,13 @@
 The jekyll stuff for my blog.
 
 ## Guidelines
+### VM setup
+
+```
+vagrant plugin update
+vagrant up
+```
+
 ### Local Setup
 
 - [Github Pages: Gem Versions](https://pages.github.com/versions/)
