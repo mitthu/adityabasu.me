@@ -141,6 +141,11 @@ responsive_image:
   extra_images:
     - images/404.jpg
 
+# Variables to link assests in posts
+asset:
+  post: "assets/posts"
+  research: "assests/research"
+
 # Configure favicon
 favicon:
   svg: /images/favicon.svg
