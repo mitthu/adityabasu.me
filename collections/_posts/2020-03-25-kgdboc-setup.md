@@ -49,10 +49,10 @@ CONFIG_KGDB=y
 CONFIG_KGDB_SERIAL_CONSOLE=y
 ```
 
-Now to enable debugging support during boot, we need to add `kgdboc=ttyS0,115200` to the kernel's command line options. For Ubuntu based distro, this can be done via the `/etc/default/grub` file.
+Now to enable debugging support during boot, we need to add `kgdboc=ttyS0,115200` to the kernel's command line options. Also to do meaningful debugging, we disable KASLR using [nokaslr][]. For Ubuntu based distro, this can be done via the `/etc/default/grub` file.
 
 ```bash
-vm1$ echo 'GRUB_CMDLINE_LINUX_DEFAULT="console=tty0 kgdboc=kbd,ttyS0,115200"' | sudo tee -a /etc/default/grub
+vm1$ echo 'GRUB_CMDLINE_LINUX_DEFAULT="console=tty0 nokaslr kgdboc=kbd,ttyS0,115200"' | sudo tee -a /etc/default/grub
 
 vm1$ sudo update-grub
 Generating grub.cfg ...
@@ -253,8 +253,42 @@ vm2$ sudo screen /dev/ttyS0
 # Gotchas
 > Remote debugging (i.e. press CTRL-C to drop into gdb prompt) cannot be triggered over serial or via gdb. You need to break in from the guest kernel (using sysrq).
 
+# Extras
+## Kernel's command line parameters
+```bash
+vm1$ cat /proc/cmdline 
+BOOT_IMAGE=/boot/vmlinuz-3.2.0-pfwall-fedora-patches+ root=UUID=7d69eb56-ea8c-4243-8e7d-e2714fced818 ro console=tty0 nokaslr kgdboc=kbd,ttyS0,115200
+```
+
+## Get kernel symbols at runtime
+```bash
+# Get runtime symbol table
+vm1$ sudo head -5 /proc/kallsyms 
+0000000000000000 D irq_stack_union
+0000000000000000 D __per_cpu_start
+0000000000004000 D gdt_page
+0000000000005000 d exception_stacks
+000000000000b000 d tlb_vector_offset
+```
+
+Note that [only superuser (i.e. root)][kallsyms] can read the kernel addresses of the symbols.
+
+```bash
+vm1$ head -5 /proc/kallsyms 
+0000000000000000 D irq_stack_union
+0000000000000000 D __per_cpu_start
+0000000000000000 D gdt_page
+0000000000000000 d exception_stacks
+0000000000000000 d tlb_vector_offset
+```
+
+<br />
+*Last updated on: March 31, 2020*
+
 <!-- References -->
 [kernel-doc]: https://www.kernel.org/doc/html/latest/dev-tools/kgdb.html#kernel-config-options-for-kgdb "Kernel Debugging Guide"
+[nokaslr]: https://stackoverflow.com/questions/44612822/why-gdb-cannot-find-the-source-lines-of-the-linux-kernel-when-debugging-through "Cannot add breakpoint to kernel function"
+[kallsyms]: https://stackoverflow.com/questions/10447491/reading-kallsyms-in-user-mode "Reading kernel symbols"
 
 <!-- Unused References -->
 [debug-live-kernel]: https://opensourceforu.com/2011/03/kgdb-with-virtualbox-debug-live-kernel/
