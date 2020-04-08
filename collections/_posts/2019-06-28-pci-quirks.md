@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Quirks about PCI
+excerpt: Addressing 64-bit PCI registers.
+category: Device Drivers
 tags:
   - specifications
   - protocol
