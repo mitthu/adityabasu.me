@@ -22,6 +22,8 @@ My research focus is in OS Kernel Security, specifically Linux.
 **Links.**
 [Resume](https://resume.0xa.fun/resume.pdf)
 
+<!--
 **Some legal stuff.**
 All content on this website are solely my opinions.
 It does not represent my employer's opinions.
+-->
