@@ -20,7 +20,8 @@ My research focus is in OS Kernel Security, specifically Linux.
 * My under-graduation was from [Dhirubhai Ambani Institute](https://www.daiict.ac.in). `// 2014 batch`
 
 **Links.**
-[Resume](https://resume.0xa.fun/resume.pdf)
+<!-- [Resume](https://resume.0xa.fun/resume.pdf) -->
+[Curriculum Vitae](https://resume.0xa.fun/cv-res.pdf)
 
 <!--
 **Some legal stuff.**
