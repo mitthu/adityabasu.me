@@ -324,11 +324,12 @@ nav {
   }
 
   .post-excerpt {
-    color: $theme-dark;
+    color: $theme;
     margin-left: 2em;
     padding-left: 0.5em;
     border-left: 2px solid #ddd;
     font-family: $font-excerpt;
+    font-size: $font-size-excerpt;
 
     p {
       margin: 0em;

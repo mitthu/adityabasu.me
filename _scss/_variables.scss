@@ -14,19 +14,45 @@ $white: #fff;
  * Font stacks:
  * - Make sure to remove @import of unused fonts.
  * - Too many @import's will increase page load time.
+ *
+ * Styles:
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,700italic,400italic);
+$roboto: 'Roboto', sans-serif;
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,700,400italic,700italic);
+$robotomono: 'Roboto Mono',;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital@0;1&display=swap');
+$spacemono: 'Space Mono', monospace;
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+$lora: 'Lora', serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap');
+$lato: 'Lato', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+$ptmono: 'PT Mono', monospace;
+
+ * END(Styles)
  */
+
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
 $bitstream: 'Bitstream Vera Sans Mono','Courier', monospace;
 
-// Roboto
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,700italic,400italic);
-$roboto: 'Roboto', sans-serif;
+/* Fetch the following:
+ * Lora = Regular 400, Regular 400 italic, Semi-bold 600, Semi-bold 600 italic
+ * Lato = Regular 400, Regular 400 italic, Bold 700, Bold 700 italic
+ * PT Sans = Regular 400, Regular 400 italic, Bold 700, Bold 700 italic
+ */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-// Roboto Mono font
-@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,700,400italic,700italic);
-$robotomono: 'Roboto Mono',;
+$lora: 'Lora', serif;
+$lato: 'Lato', sans-serif;
+$ptmono: 'PT Mono', monospace;
 
 // Theme Specific
 $theme: $gray;
@@ -39,16 +65,17 @@ $theme-code-background: #FAFAFA;
 $link: $blue;
 $link-hover: darken($link, 15%);
 
-$font: $roboto;
-$font-head: $roboto;
-$font-img: $roboto;
-$font-mono: $robotomono;
-$font-excerpt: $helveticaNeue;
+$font:         $lora;
+$font-img:     $lora;
+$font-excerpt: $lora;
+$font-head:    $lato;
+$font-mono:    $ptmono;
 
 $font-size-normal: 18px;
 $font-size-code: 14px;
 $font-size-code-caption: 15px;
 $font-size-img-caption: 16px;
+$font-size-excerpt: 16px;
 $font-size-h1: $font-size-normal + 12;
 $font-size-h2: $font-size-normal + 6;
 $font-size-h3: $font-size-normal + 2;
