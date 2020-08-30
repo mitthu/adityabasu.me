@@ -22,6 +22,7 @@ My research focus is in OS Kernel Security, specifically Linux.
 **Links.**
 <!-- [Resume](https://resume.0xa.fun/resume.pdf) -->
 [Curriculum Vitae](https://resume.0xa.fun/cv-res.pdf)
+• [Google Scholar](https://scholar.google.com/citations?user=NjtxVEoAAAAJ)
 
 <!--
 **Some legal stuff.**
