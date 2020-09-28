@@ -194,13 +194,14 @@ img {
 .site-name {
   margin: 0;
   color: $darkGray;
-  font-family: $font;
+  font-family: $font-head;
   font-size: 28px;
 }
 
 .site-description {
   margin: -5px 0 0 0;
   color: $gray;
+  font-family: $font-head;
   font-size: 16px;
   
   @include mobile {
