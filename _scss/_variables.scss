@@ -63,14 +63,14 @@ $georgia: Georgia, serif;
 $bitstream: 'Bitstream Vera Sans Mono','Courier', monospace;
 
 // Theme Specific
-$theme: $gray;
+$theme: #333; /* shade of black */
 $theme-lighter: lighten($theme, 52%);
 $theme-light: lighten($theme, 40%);
 $theme-dark:  darken($theme, 15%);
 $theme-trans75: rgba($theme,.75);
 $theme-code-background: #FAFAFA;
 
-$link: $blue;
+$link: #0072BB; /* french lilac */
 $link-hover: darken($link, 15%);
 
 $font:         $gentium;
