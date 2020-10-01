@@ -17,7 +17,8 @@ tags:
 
 {%- include basepaths.html -%}
 
-The goal is to setup a Linux based VirtualBox VM which can be debugged from the host or another VM.
+The goal is to setup a Linux based VirtualBox VM which can be debugged from the host, or another VM.
+To debug using another physical machine, see [Debug from another (physical) machine](#debug-from-another-physical-machine) section.
 
 {% include toc.html %}
 
@@ -168,12 +169,12 @@ kgdb_breakpoint () at kernel/debug/debug_core.c:960
 #9  0x0000000000000000 in ?? ()
 (gdb) continue
 
+# To reboot (refer kernel/debug/gdbstub.c:gdb_cmd_reboot())
+maintenance packet R0
+
 # To switch to the kdb shell
 maintenance packet 3
 # and exit gdb with CTRL-C
-
-# For debugging
-host$ gdb kernel/vmlinux -ex "set debug remote 1" -ex "target remote /tmp/vm-serial-pty"
 ```
 
 The following is the timeout error if the kernel being debugged does not trap before gdb tries to connect. If this happens, then quit gdb, run `echo g | sudo tee /proc/sysrq-trigger` in the vm (kernel being debugged) and then run the above gdb command.
@@ -190,8 +191,10 @@ warning: unrecognized item "timeout" in "qSupported" response
 Ignoring packet error, continuing...
 Remote replied unexpectedly to 'vMustReplyEmpty': timeout
 (gdb)
-```
 
+# Optionally, to view gdb's protocol packets
+host$ gdb kernel/vmlinux -ex "set debug remote 1" -ex "target remote /tmp/vm-serial-pty"
+```
 
 ## Using kbd
 After issuing `maintenance packet 3` in gdb shell, you would have switched to the kbd shell. Now you can connect to the serial port (pty) directly using screen.
@@ -355,8 +358,47 @@ This feature is available on newer kernels such as v5.6.0. Use any of the follow
 echo 1 | sudo tee /sys/module/kgdb/parameters/kgdb_use_con
 ```
 
+## Debug from another (physical) machine
+
+When using a **physical serial connection**, i.e. debugging one physical machine (instead of a VM) using another physical machine, it may be necessary to specify the baud rate. Also root permissions are needed to access the serial port (hence the `sudo`).
+
+### gdbserver
+{:.no_toc}
+
+```bash
+host$ file /dev/ttyUSB0
+/dev/ttyUSB0: character special (188/0)
+
+# Debug via physical serial
+host$ sudo gdb vmlinux -ex "target remote /dev/ttyUSB0" -b 115200
+```
+
+### kbd
+{:.no_toc}
+
+```bash
+# -L records the entire session in screenlog.0
+host$ sudo screen -L /dev/ttyUSB0 115200
+
+# To exit use: Ctrl+a k y
+```
+
 <br />
-*Last updated on: April 7, 2020*
+
+#### Updates
+{:.no_toc}
+
+* October 1, 2020:
+  * Guidelines to debug a physical machine
+  * Instructions to reboot kernel via gdb
+* April 7, 2020:
+  * Add kernel config option to disable read-only kernel protection
+  * Method to view printk messages in gdb
+* March 31, 2020:
+  * Add -- Print variables from the live kernel
+  * Add -- Kernel's command line parameters
+  * Add -- Get kernel symbols at runtime
+
 
 <!-- References -->
 [kernel-doc]: https://www.kernel.org/doc/html/latest/dev-tools/kgdb.html#kernel-config-options-for-kgdb "Kernel Debugging Guide"
