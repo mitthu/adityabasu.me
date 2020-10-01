@@ -11,6 +11,8 @@ sitemap: false
 
 * [Tags](/tags/) -- hidden navigation
 
+{% include toc.html %}
+
 # Template
 [https://prose.io/#mitthu/adityabasu.me/tree/master/collections/_posts](https://prose.io/#mitthu/adityabasu.me/tree/master/collections/_posts "Create a post")
 
@@ -32,6 +34,24 @@ tags:
 {{ "{%- include basepaths.html " }}-%}
 ```
 
+# Add Table of Contents (toc)
+
+[TOC Documentation](https://kramdown.gettalong.org/converter/html.html#toc) is here.
+
+{% raw %}
+
+For TOC use --
+```
+{% include toc.html %}
+```
+
+To skip a heading from the toc,
+```markdown
+# the heading to skip...
+{:.no_toc}
+```
+
+{% endraw %}
 
 # Posts
 ```
