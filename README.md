@@ -75,6 +75,19 @@ end
   * [Google Fonts](https://www.google.com/fonts)
 - [Group posts by year](https://stackoverflow.com/questions/19086284/jekyll-liquid-templating-how-to-group-blog-posts-by-year/20777475#20777475)
 
+## Table of contents (TOC)
+- For TOC in a sticky side bar:
+  * https://www.bram.us/2020/01/10/smooth-scrolling-sticky-scrollspy-navigation/
+  * https://lab.hakim.se/progress-nav/
+
+- To use `position: sticky;`, edit style.scss:
+```css
+.container {
+  ...
+  overflow: auto; /* remove this! */
+}
+```
+
 ## Credits
 - [JekyllNow Theme](https://github.com/barryclark/jekyll-now)
 - [Icons @footer](https://github.com/neilorangepeel/Free-Social-Icons)
