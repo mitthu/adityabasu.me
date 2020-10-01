@@ -28,6 +28,9 @@ make prod
 
 # Fix issues with ruby gems
 make doctor
+
+# Update Gemfile (& dependencies)
+make update
 ```
 
 ### Include Table of Contents

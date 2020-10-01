@@ -38,3 +38,11 @@ endif
 doctor:
 	gem update --system --no-doc
 	gem update --no-doc
+
+.PHONY: update
+update:
+	bundle update
+	bundle install
+	@echo "---"
+	@echo "# If updating doesn't work, then run:"
+	@echo "  > rm Gemfile.lock; make depsinstall"
