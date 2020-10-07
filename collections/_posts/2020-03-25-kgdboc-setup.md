@@ -43,11 +43,11 @@ Make sure to have "Connect to existing pipe/socket" **unchecked**.
 
 Alternatively if you are using vagrant, then add the following to your Vagrantfile and then run `vagrant reload`.
 ```ruby
-  config.vm.provider "virtualbox" do |vb|
-    vb.customize ["modifyvm", :id,
-      "--uart1", "0x3f8", "4",
-      "--uartmode1", "server", "  /tmp/vm-serial-socket"]
-  end
+config.vm.provider "virtualbox" do |vb|
+  vb.customize ["modifyvm", :id,
+    "--uart1", "0x3f8", "4",
+    "--uartmode1", "server", "  /tmp/vm-serial-socket"]
+end
 ```
 
 Now we need to make sure that the kernel is compiled with debugging support.
