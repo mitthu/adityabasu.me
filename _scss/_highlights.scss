@@ -17,7 +17,6 @@
 @mixin _highlight_common() {
   background-color: $theme-code-background;
   padding: 8px;
-  border: 1px solid #ddd;
   width: 100%;
   // Need display: block; for scrollbars to appear.
   display: block;
@@ -100,8 +99,7 @@ code.highlighter-rouge {
 
 // rogue-based code highlight (```code```)
 div.highlighter-rouge {
-  @include _highlight_common;  
-  @include _box_decoration;
+  @include _highlight_common;
   @include _code;
 
   // Add space between vertical line and code
