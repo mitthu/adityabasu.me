@@ -27,8 +27,8 @@ ifeq ($(OS), Darwin)
 endif
 	
 	@mkdir -p $(GEM_HOME)
-	@echo "Update system gems..."
-	@sudo gem update --system --no-doc
+	@echo "Update gems..."
+	@gem update --no-doc
 	@echo "Installing gem: bundler..."
 	@gem install bundler -v "~>2.0"
 	@echo "Installing dependencies..."
@@ -36,7 +36,6 @@ endif
 
 .PHONY: doctor
 doctor:
-	gem update --system --no-doc
 	gem update --no-doc
 
 .PHONY: update
