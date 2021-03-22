@@ -9,3 +9,40 @@ layout: default
 	<div class="sidebar-toc-head">Navigation</div>
 	<ol class="sidebar-toc"></ol>
 </div>
+
+<!--
+  Tocbot: to add sidebar navigation
+  Also added CSS to the <head>...</head>
+
+  TODO:
+	- Navigation does not scroll & get fixed on top. It's in the way:
+		* Landscape on mobile
+		* Scrolling beyond Discus comments
+	- Irregular length of border line seperating content & sidebar.
+	  It seems to be the max. length of the TOC when expanded.
+
+  Refer:
+    - http://tscanlin.github.io/tocbot/
+    - https://github.com/tscanlin/tocbot
+-->
+
+<!-- Stylesheets allows in body; see https://html.spec.whatwg.org/multipage/links.html#body-ok -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.min.js"></script>
+<script type="text/javascript">
+  tocbot.init({
+    // Where to render the table of contents.
+    tocSelector: '.sidebar-toc',
+    // Where to grab the headings to build the table of contents.
+    contentSelector: '.entry',
+    // Which headings to grab inside of the contentSelector element.
+    headingSelector: 'h1, h2, h3',
+    // For headings inside relative or absolute positioned containers within content.
+    hasInnerContainers: true,
+  });
+
+  // Show the populated sidebar
+  const sidebar = document.getElementById('sidebar');
+  sidebar.style.visibility = "visible";
+</script>

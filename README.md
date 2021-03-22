@@ -76,11 +76,13 @@ end
 - [Group posts by year](https://stackoverflow.com/questions/19086284/jekyll-liquid-templating-how-to-group-blog-posts-by-year/20777475#20777475)
 
 ## Table of contents (TOC)
+- Refer `_layout/sidebar.html`
 - For TOC in a sticky side bar:
   * https://www.bram.us/2020/01/10/smooth-scrolling-sticky-scrollspy-navigation/
   * https://lab.hakim.se/progress-nav/
+  * http://tscanlin.github.io/tocbot/
 
-- To use `position: sticky;`, edit style.scss:
+- To use `position: sticky; top: 1em;`, edit style.scss:
 ```css
 .container {
   ...
