@@ -241,9 +241,12 @@ nav {
 }
 
 .toc {
-	padding-top: 12px;
-	margin: 0px;
-	font-family: $font-head;
+  border: 1px solid $lightGray;
+	/*padding-top: 12px;*/
+  padding: 1em;
+  margin: 0px;
+  display: inline-block;
+  font-family: $font-head;
 
 	.toc-head {
 		@extend h4;
@@ -256,6 +259,15 @@ nav {
 		padding: 0px;
 		margin: 0px;
 	}
+  /* 1.1, 1.2.1 etc. style lists
+   * Refer: https://stackoverflow.com/questions/5050843/present-lists-and-sublists-in-html
+   */
+  ol { counter-reset: item }
+  ol > li { display: block }
+  ol > li:before {
+    content: counters(item, ".") ". ";
+    counter-increment: item
+  }
 
 	#markdown-toc {
 		padding-top: 0px;
