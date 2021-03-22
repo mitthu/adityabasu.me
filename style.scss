@@ -34,6 +34,86 @@ body {
   overflow: auto;
 }
 
+/* Classes to support a sidebar */
+.wrapper-main {
+  display: block;
+}
+
+.content {
+  display: inline-block;
+  vertical-align: top;
+  width: 80%;
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.sidebar {
+  display: inline-block;
+  vertical-align: top;
+  width: 15%;
+  position: fixed;
+  margin-left: 1em;
+
+  /* Initially hidden so that if JS is not available,
+     then we don't show the heading ("Navigation").
+     JS toggles this after populating the sidebar. */
+  visibility: hidden;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.sidebar-toc-head {
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  border-bottom: 1px dotted;
+}
+
+
+/*@media screen and (min-width: 900px) {
+  .content {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 740px;
+    width: 80%;
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  .sidebar {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 2000px;
+    width: 19%;
+    @include mobile {
+      display: none;
+    }
+  }
+}*/
+
+/* Using Grid Layout (supported only on modern browsers)
+.wrapper-main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+}
+
+.content {
+  grid-column: 1 / 4;
+}
+
+.sidebar {
+  border: 1px solid black;
+  grid-column: 4 / 5;
+}
+*/
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-head;
   color: $darkerGray;
