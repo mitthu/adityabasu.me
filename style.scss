@@ -228,14 +228,16 @@ img {
 /*********************/
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+  margin-bottom: 15px;
+  /*padding-bottom: 5px;*/
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 .masthead {
   padding: 20px 0;
-//  border-bottom: 1px solid $theme-trans75;
   vertical-align: text-bottom;
-  
+
   @include mobile {
     text-align: center;
   }
@@ -295,7 +297,7 @@ nav {
   padding-top: 12px;
   margin: 0px;
   font-family: $font-head;
-  font-size: 18px;
+  font-size: $font-size-normal;
   width: 66%;
   text-align: right;
 
@@ -395,7 +397,7 @@ nav {
 }
 
 .post {
-  font-size: 18px;
+  font-size: $font-size-normal;
   margin-bottom: 1.5ex;
 
   blockquote {

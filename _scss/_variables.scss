@@ -4,10 +4,10 @@ $blue: #34699D;
 
 // Grays
 $black: #000;
-$darkerGray: #222;
-$darkGray: #333;
+$darkerGray: #222; /* h1, h2, h3 */
+$darkGray: #333;   /* site title & nav */
 $gray: #666;
-$lightGray: #eee;
+$lightGray: #eee;  /* h4, bottom banner */
 $white: #fff;
 
 /*
@@ -76,7 +76,7 @@ $link-hover: darken($link, 15%);
 $font:         $gentium;
 $font-img:     $gentium;
 $font-excerpt: $gentium;
-$font-head:    $lora;
+$font-head:    $lato;
 $font-mono:    $ptmono;
 
 $font-size-normal: 18px;
