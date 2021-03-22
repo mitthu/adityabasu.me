@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Resume
+title: Résumé
 permalink: /about/
 published: true
 ---
@@ -117,7 +117,7 @@ GPA = 9.52 (of 10) in major; 8.55 overall
 
 <ul class="exp">
     <li><strong>Software Engineering Intern</strong> at
-        <a href="https://careers.google.com/locations/cambridge/">Google, Cambridge</a>
+        <a href="https://careers.google.com/locations/cambridge/">Google, Cambridge (USA)</a>
     </li>
     <span class="dates">Summer 2019</span>
 </ul>
@@ -165,7 +165,7 @@ OBD-II diagnostics port.
 
 <ul class="exp">
     <li><strong>Software Developer Intern</strong> at
-        <a href="https://www.daiict.ac.in">Dhirubhai Ambani Institute</a>
+        <a href="https://www.daiict.ac.in">Dhirubhai Ambani Institute, Ahmedabad</a>
     </li>
     <span class="dates">Summer '13 & '14</span>
 </ul>
@@ -182,14 +182,14 @@ OBD-II diagnostics port.
 
 ## Skills
 
-\>10k lines
+\>10k SLOC
 :   C •
     Python •
     bash •
     LaTeX (macros) •
     HTML
 
-5k --- 10k lines
+5k --- 10k SLOC
 :   Django •
     Puppet •
     Ansible •
