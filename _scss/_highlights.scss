@@ -6,7 +6,7 @@
 
 @mixin _code_inline_decoration() {
   padding: 0.2ex;
-  background-color: $theme-code-background;
+  background-color: $theme-bgcode;
 }
 
 @mixin _box_decoration() {
@@ -15,7 +15,7 @@
 }
 
 @mixin _highlight_common() {
-  background-color: $theme-code-background;
+  background-color: $theme-bgcode;
   padding: 8px;
   width: 100%;
   // Need display: block; for scrollbars to appear.
@@ -89,7 +89,7 @@ figure.code {
 
 // set code background for rogue-based code highlighting
 pre.highlight {
-  background-color: $theme-code-background;
+  background-color: $theme-bgcode;
 }
 
 // inline fenced code

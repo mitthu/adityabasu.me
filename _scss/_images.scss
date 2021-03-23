@@ -5,8 +5,8 @@ figure.image-caption {
   font-size: $font-size-img-caption;
 
   // visual properties
-  border: 10px solid #ddd;
-  background-color: #ddd;
+  border: 10px solid $theme-bgfigure;
+  background-color: $theme-bgfigure;
   width: 100%;
   vertical-align: middle;
   text-align: center;
@@ -20,8 +20,8 @@ figure.image-caption {
 
   figcaption {
     font-weight: bold;
-    background-color: #ddd;
-    border-top: 5px solid #ddd;
+    background-color: $theme-bgfigure;
+    border-top: 5px solid $theme-bgfigure;
     width: 100%;
   }
 }
