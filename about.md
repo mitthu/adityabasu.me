@@ -53,7 +53,7 @@ Additionally, I also have development experience with Unix-like kernels.
     <li><strong>PhD Student</strong> in
         <em>Computer Science</em>
     </li>
-    <span class="dates">(exp.) May 2022</span>
+    <span class="dates">(exp.) 2022</span>
 </ul>
 at <a href="https://www.psu.edu/">The Pennsylvania State University</a>, PA, USA.
 <br/>
