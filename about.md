@@ -45,8 +45,8 @@ published: true
 I am a PhD candidate at [The Pennsylvania State University](https://www.psu.edu/) and part of the [SIIS lab](https://cybersecurity.psu.edu/). My research focuses in OS Kernel Security, specifically Linux. My advisor is [Trent Jaeger](http://trentjaeger.com/).
 
 My research interests are in _Systems Security_ and _Operating Systems_.
-Currently, I am working on collecting control-flow traces of user-space programs using Intel® Processor Trace.
-My goal is to explore new metrics and techniques for system monitoring in order to defend against zero days.
+I have worked on compilers for shellcode generation, designing security-focussed hardware extensions, and user-space monitoring using Intel® Processor Trace. 
+Additionally, I also have development experience with Unix-like kernels.
 
 ## Education
 <ul class="exp">
@@ -186,6 +186,7 @@ OBD-II diagnostics port.
 \>10k SLOC
 :   C •
     Python •
+    Golang •
     bash •
     LaTeX (macros) •
     HTML
