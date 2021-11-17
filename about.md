@@ -73,7 +73,7 @@ GPA = 9.52 (of 10) in major; 8.55 overall
 
 ## Publications
 
-2021
+2020
 :   **Automatic Generation of Compact Printable Shellcodes for x86**<br/>
     Dhrumil Patel, _Aditya Basu_, Anish Mathuria.
     In _14<sup>th</sup> USENIX Workshop on Offensive Technologies (WOOT)_.<br/>
