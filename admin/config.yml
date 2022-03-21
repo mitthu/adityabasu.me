@@ -20,10 +20,19 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime", default: ""}
+      - {label: "Published", name: "published", widget: "boolean", default: true}
       - {label: "Category", name: "category", widget: "string"}
       - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Excerpt", name: "excerpt", widget: "string"}
       # - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      # - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        default: |
+          {%- include basepaths.html -%}
+
+          {% include toc.html %}
 
   - name: "pages"
     label: "Pages"
