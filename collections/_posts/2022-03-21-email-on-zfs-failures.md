@@ -12,13 +12,11 @@ excerpt: Cron job to check for failed disks
 ---
 {%- include basepaths.html -%}
 
-{% include toc.html %}
-
 Make sure that email is setup for `root` user. We will run a daily cron job to verify the state of all Zpools.
 
 Run the following (bash shell):
 
-```
+```shell
 echo "\
 #!/bin/sh
 #
