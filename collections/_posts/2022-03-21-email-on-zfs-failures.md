@@ -29,5 +29,4 @@ echo "\
 " | sudo tee /etc/cron.daily/zpool-status >/dev/null
 
 sudo chmod +x /etc/cron.daily/zpool-status
-
 ```
