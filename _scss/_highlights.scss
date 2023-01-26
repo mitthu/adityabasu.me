@@ -1,132 +1,63 @@
 /* Syntax highlighting */
-@mixin _code() {
+code {
   font-family: $font-mono;
   font-size: $font-size-code;
 }
 
-@mixin _code_inline_decoration() {
-  padding: 0.2ex;
-  background-color: $theme-bgcode;
-}
-
-@mixin _box_decoration() {
-  margin: 20px 0 20px 0;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
-}
-
-@mixin _highlight_common() {
-  background-color: $theme-bgcode;
-  padding: 8px;
-  width: 100%;
-  // Need display: block; for scrollbars to appear.
-  display: block;
-  overflow: auto;
-}
-
-// Common highlight stuff boxes
-.code {
-  @include _code;
-
-  .highlight {
-    @include _highlight_common;
-  }
-}
-
-.lineno {
-  color: #ccc;
-  padding: 0 5px;
-  border-right: 1px solid #ccc;
-  vertical-align: middle;
-  text-align: right;
-  min-width: 2em;
-
-  @include user-unselectable;
-}
-
-// figure-based code highlight
-figure.code {
-  @include _box_decoration;
-
-  figcaption {
-    padding: 2px;
-    border: 1px solid #ddd;
-    border-bottom: 0px;
-    width: 100%;
-    text-align: center;
-    color: #777;
-    background: linear-gradient(#FFF, #F0F0F0 6%, #E5E5E5 90%, #DDD);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    font-family: $font;
-    font-size: $font-size-code-caption;
-  }
-
-  .highlight {
-    margin: 0px;
-    padding: 0px;
-  }
-
-  // Add space between vertical line and code
-  .code {
-    padding-left: 6px;
-  }
-}
-
-// table-based code highlight
-.highlighttable {
-  @include _highlight_common;
-  border: 1px solid #ddd;
-  border-collapse: collapse;
-  padding: 0px;
-  margin: 0px;
-
-  .highlight {
-    border:none;
-    outline:none;
-    margin: 0px;
-  }
-}
-
-// set code background for rogue-based code highlighting
-pre.highlight {
-  background-color: $theme-bgcode;
-}
-
-// inline fenced code
+/* Inline fenced code */
 code.highlighter-rouge {
-  padding: 4px;
+  padding: 0.5ex;
+  background-color: $theme-bgcode;
 }
 
-// rogue-based code highlight (```code```)
+/* Block fenced code */
 div.highlighter-rouge {
-  @include _highlight_common;
-  @include _code;
+  background-color: $theme-bgcode;
+  padding: 0 8px;
+  margin: 15px 0;
+  width: 100%;
+  display: block; /* for scrollbars */
+  overflow: auto;
 
-  // Add space between vertical line and code
+  .highlight {
+    background-color: $theme-bgcode;
+  }
+
+  table.rouge-table {
+    th, td {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    }
+  }
+
   .rouge-code {
     padding-left: 6px;
   }
+
+  .rouge-gutter {
+    color: #ccc;
+    padding: 0 5px;
+    border-right: 1px solid #ccc;
+    vertical-align: middle;
+    text-align: right;
+    min-width: 2em;
+    @include user-unselectable;
+  }
+
 }
 
-// do not display line numbers by default
-.lineno {
+/* no line nos. by default */
+.rouge-gutter {
   display: none;
 }
 
-// when nolineno class is present, hide the line numbers
-.showlineno {
-  .lineno {
+/* show line nos. */
+.showlineno .rouge-gutter {
     display: block;
-  }
 }
 
-// inline rogue-based code highlight (`code`)
-.highlighter-rouge {
-  @include _code;
-  @include _code_inline_decoration;
-}
 
-// highlight color template
+/* Highlight color template */
 .highlight {
    // Syntax Highlight
     .c     { color: #998; } // Comment
