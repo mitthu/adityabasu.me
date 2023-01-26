@@ -8,6 +8,7 @@ The jekyll stuff for my blog.
 
 ```
 vagrant plugin update
+vagrant plugin install vagrant-notify-forwarder
 vagrant up
 ```
 

@@ -3,7 +3,7 @@
 
 Vagrant.configure("2") do |config|
   config.vagrant.plugins = "vagrant-notify-forwarder"
-  config.vm.box = "ubuntu/bionic64"
+  config.vm.box = "ubuntu/focal64"
 
   config.vm.network "forwarded_port", guest: 4000, host: 4000, host_ip: "127.0.0.1"
 
