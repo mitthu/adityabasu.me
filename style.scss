@@ -130,17 +130,22 @@ h1, h2, h3, h4, h5, h6 {
   
 h1 {  
   font-size: $font-size-h1;
+  margin-top: 2.5ex;
   a {
     color: inherit;
   }
 }
 
 h2 {  
+  margin-top: 2.5ex;
   font-size: $font-size-h2;
+  color: lighten($theme, 30%);
 }
 
 h3 {  
   font-size: $font-size-h3;
+  color: lighten($theme, 30%);
+  font-style: italic;
 }
 
 h4 {  
