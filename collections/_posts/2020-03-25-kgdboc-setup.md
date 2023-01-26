@@ -35,11 +35,7 @@ We will be debugging the VM's kernel. Before we can debug the VM's kernel, we ne
 To begin, go to the VM's settings and open "Serial Ports". Enable COM1, select port mode to be "Host Pipe". Give the path as "/tmp/vm-serial-socket".
 Make sure to have "Connect to existing pipe/socket" **unchecked**. 
 
-{% responsive_image_block %}
-  path: {{site.asset.post}}/20200325-vm1-serial-socket.png
-  alt: VirtualBox Serial Port Setting
-  caption: VirtualBox Serial Port Setting
-{% endresponsive_image_block %}
+![VirtualBox Serial Port Setting]({{site.asset.post}}/20200325-vm1-serial-socket.png)
 
 Alternatively if you are using vagrant, then add the following to your Vagrantfile and then run `vagrant reload`.
 ```ruby
@@ -245,11 +241,7 @@ We can also spawn another virtual machine (say VM2) and debug the the first virt
 For this we need to set up VM2 to be the client for the socket created by VM1. Go to the VM2's settings and open "Serial Ports". Enable COM1, select port mode to be "Host Pipe". Give the path as "/tmp/vm-serial-socket".
 **Check** the option "Connect to existing pipe/socket". 
 
-{% responsive_image_block %}
-  path: {{site.asset.post}}/20200325-vm2-serial-socket.png
-  alt: VirtualBox Serial Port Setting for VM2
-  caption: VirtualBox Serial Port Setting for VM2
-{% endresponsive_image_block %}
+![VirtualBox Serial Port Setting for VM2]({{site.asset.post}}/20200325-vm2-serial-socket.png)
 
 Alternatively if you are using vagrant, then add the following to your Vagrantfile and then run `vagrant reload`.
 ```ruby

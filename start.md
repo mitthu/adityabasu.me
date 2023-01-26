@@ -17,7 +17,6 @@ sitemap: false
 [https://prose.io/#mitthu/adityabasu.me/tree/master/collections/_posts](https://prose.io/#mitthu/adityabasu.me/tree/master/collections/_posts "Create a post")
 
 ```
-# Front matter
 layout: post
 excerpt: >-
   Using the mr tool, you can issue commands to multiple repositories in
@@ -29,9 +28,6 @@ tags:
   - mr
   - pushover
   - sysad
-
-# Content
-{{ "{%- include basepaths.html " }}-%}
 ```
 
 # Add Table of Contents (toc)
@@ -142,25 +138,10 @@ var sigmoidGate = function() {
 ```
 {: .nolineno}
 
+
 ## Image
-Width = 50% (no caption)
-```
-responsive_image path: 'images/404.jpg' width: 400px
-```
-{% responsive_image path: 'images/404.jpg' width: 400px %}
 
-Width = 100% (default & with caption)
-```
-responsive_image path: 'images/404.jpg' caption: 'width: 100%'
-```
-{% responsive_image path: 'images/404.jpg' caption: 'width: 100%' %}
-
-
-Width = 80% (with caption)
-```
-responsive_image path: 'images/404.jpg' width: 80% caption: 'width: 80%' template: _includes/img/srcset-caption.html
-```
-{% responsive_image path: 'images/404.jpg' width: 80% caption: 'width: 80%' template: _includes/img/srcset-caption.html %}
+![404 Image](images/404.jpg)
 
 
 ## Installing `imagemin`

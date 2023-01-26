@@ -1,3 +1,15 @@
+/* Center images */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+
+  // Font, if image is missing
+  font-weight: bold;
+  text-align: center;
+}
+
 /* Image */
 figure.image-caption {
   // font

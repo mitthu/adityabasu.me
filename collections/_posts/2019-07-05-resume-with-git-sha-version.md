@@ -93,12 +93,7 @@ clean:
 
 These are all the steps needed to get a rolling release. The final document looks like -
 
-{% responsive_image_block %}
-  path: {{site.responsive_image.base_path}}/posts/20190705-resume.png
-  alt: resume with rolling release version
-  <!-- width: 40% -->
-  caption: Resume stamped with a release version
-{% endresponsive_image_block %}
+![Resume stamped with a release version]({{site.asset.post}}/20190705-resume.png)
 
 **One important point** is that any changes made to the resume need to be **committed first**. Otherwise the resume will get marked with an older (and incorrect) version number.
 

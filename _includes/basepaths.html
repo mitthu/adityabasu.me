@@ -1,9 +1,0 @@
-{% comment %} Absolute resource paths {% endcomment %}
-{%- capture asset_path -%}
-	{{ site.assets }}/posts/{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}
-{%- endcapture -%}
-
-{% comment %} Relative path for responsive_image {% endcomment %}
-{%- capture image_path -%}
-	{{ site.responsive_image.base_path }}/posts/{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}
-{%- endcapture -%}
