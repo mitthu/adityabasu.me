@@ -113,13 +113,6 @@ div.highlighter-rouge {
   display: none;
 }
 
-// DEPRECATED: when nolineno class is present, hide the line numbers
-.nolineno {
-  .lineno {
-    display: none;
-  }
-}
-
 // when nolineno class is present, hide the line numbers
 .showlineno {
   .lineno {

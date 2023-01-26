@@ -54,25 +54,17 @@ To skip a heading from the toc,
 include posts.html category="draft"
 ```
 
-# Archvied pages
-* link archive/projects.md
-* link archive/research.md
-* link archive/blog.html
-
 
 # Docs
 * [Linking in Jekyll](https://jekyllrb.com/docs/liquid/tags/#link)
 
-# Presentation
-- [Link to Google Slides](https://docs.google.com/presentation/d/e/2PACX-1vSnRWlYCYhHttURB1ZHugpTm2X2rc36oPuMAp-iNXJO55WLyjqHLdFVlvh1Kg5Pi-IBlF26PeAyW3kb/pub?start=false&loop=false&delayms=3000)
-
-<!-- <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSnRWlYCYhHttURB1ZHugpTm2X2rc36oPuMAp-iNXJO55WLyjqHLdFVlvh1Kg5Pi-IBlF26PeAyW3kb/embed?start=false&loop=false&delayms=60000" frameborder="0" width="640" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> -->
 
 # Code
 
 ## Liquid Tag Based
 
-### JavaScript
+JavaScript
+
 {% include code.html caption="A ruby script" %}
 {% highlight javascript linenos=table %}
 var sigmoidGate = function() {
@@ -93,7 +85,8 @@ sigmoidGate.prototype = {
 {% endhighlight %}
 {% include endcode.html %}
 
-### Bash
+Bash shell
+
 {% include code.html %}
 {% highlight bash linenos=table %}
 def print_hi(name)
@@ -102,14 +95,7 @@ end
 {% endhighlight %}
 {% include endcode.html %}
 
-## Fenced Code Blocks
-
-### Javascript
-
-#### Span
-Inline code `like this`.
-
-#### Block
+## Fenced Blocks
 
 ```javascript
 var sigmoidGate = function() {
@@ -129,22 +115,22 @@ sigmoidGate.prototype = {
 }
 ```
 
-No line numbers:
+With line numbers:
 ```javascript
 var sigmoidGate = function() {
   // helper function
   this.sig = function(x) { return 1 / (1 + Math.exp(-x)); };
 };
 ```
-{: .nolineno}
+{: .showlineno}
 
 
-## Image
+# Image
 
-![404 Image](images/404.jpg)
+![404 Image](/images/404.jpg)
 
 
-## Installing `imagemin`
+# Installing `imagemin`
 
 * [GitHub: imagemin-cli](https://github.com/imagemin/imagemin-cli)
   * [Fix for global npm install](https://github.com/npm/npm/issues/17268)
