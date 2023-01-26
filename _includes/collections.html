@@ -5,9 +5,41 @@
 	{% endif %}
 {% endfor %}
 
+<!--
+	# Documentation:
+	https://www.rubydoc.info/gems/liquid/4.0.0/Liquid/StandardFilters#date-instance_method
+-->
+
 {% if this_collection.docs != empty %}
 <div class="posts">
-  <h3 class="category">{{ this_collection.name }}</h3>
+  <h2 class="category">{{ this_collection.name }}</h2>
+  <span class="category-description"># {{ this_collection.description }}</span>
+		{% assign prev_year = 0 %}
+	  {% for post in this_collection.docs reversed %}
+	  
+	  <!-- Print year -->
+	  {% capture year %}{{post.date | date: "%Y"}}{% endcapture %}
+	  {% if year != prev_year %}
+	  	{% assign prev_year = year %}
+	  	<strong class="post-year">{{year}}</strong>
+  	{% endif %}
+
+  	<!-- Print post -->
+  	<div class="post-entry">
+  	&#x2022;
+	  <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+	  </div>
+	  {% endfor %}
+</div>
+
+<br />
+{% endif %}
+
+
+<!-- OLD Flat list of dates -->
+{% comment %}
+<div class="posts">
+  <h2 class="category">{{ this_collection.name }}</h2>
   <span class="category-description"># {{ this_collection.description }}</span>
 	<ul>
 	  {% for post in this_collection.docs reversed %}
@@ -19,5 +51,41 @@
 	</ul>
 </div>
 
-<br />
-{% endif %}
+
+<!-- Relevant CSS (copy to style.scss) -->
+.posts > .category {
+  margin: 0px;
+}
+
+.posts > .category-description {
+  margin: 0px;
+  //display: inline;
+  font-family: $font-mono;
+  font-size: $font-size-code;
+}
+
+.posts > .post {
+  padding-bottom: 2em;
+  border-bottom: 1px solid $lightGray;
+}
+
+.posts > .post-date {
+  color: $theme-subheader;
+}
+
+.posts > .post:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+
+.posts > ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.post:last-of-type {
+  margin-bottom: 0;
+}
+{% endcomment %}
+

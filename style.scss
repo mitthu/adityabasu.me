@@ -367,39 +367,25 @@ nav {
 // .main
 //
 
-.posts > .category {
-  margin: 0px;
-}
+.posts {
+  .category {
+    margin: 0px;
+  }
 
-.posts > .category-description {
-  margin: 0px;
-  //display: inline;
-  font-family: $font-mono;
-  font-size: $font-size-code;
-}
+  .category-description {
+    margin: 0px;
+    font-family: $font-mono;
+    font-size: $font-size-code;
+  }
 
-.posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
-}
+  strong {
+    display: block;
+    margin-top: 2ex;
+  }
 
-.posts > .post-date {
-  color: $theme-subheader;
-}
-
-.posts > .post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
-}
-
-.posts > ul {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
-}
-
-.post:last-of-type {
-  margin-bottom: 0;
+  .post-entry {
+    margin-left: 1.5em;
+  }
 }
 
 .post {
