@@ -35,7 +35,7 @@ published: true
 
 ---
 **Links.**
-[Curriculum Vitae \[PDF\]](https://resume.0xa.fun/cv-res.pdf)
+[Curriculum Vitae \[PDF\]](https://resume.0xa.fun/cv-adityabasu.pdf)
 • [Google Scholar](https://scholar.google.com/citations?user=NjtxVEoAAAAJ)
 • [dblp](https://dblp.uni-trier.de/pid/154/9562.html)
 
