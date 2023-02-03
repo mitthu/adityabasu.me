@@ -6,7 +6,7 @@ code {
 
 /* Inline fenced code */
 code.highlighter-rouge {
-  padding: 0.5ex;
+  padding: 0.1ex;
   background-color: $theme-bgcode;
 }
 
@@ -15,12 +15,20 @@ div.highlighter-rouge {
   background-color: $theme-bgcode;
   padding: 0 8px;
   margin: 15px 0;
-  width: 100%;
-  display: block; /* for scrollbars */
+
+  /* for page-wide code block */
+  width: 100vw;
+  left: calc(-50vw + 50%);
+  position: relative;
+
+  /* for scrollbars */
+  display: block;
   overflow: auto;
 
   .highlight {
     background-color: $theme-bgcode;
+    margin: 0 auto; /* center text */
+    width: $pagewidth;
   }
 
   table.rouge-table {
