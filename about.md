@@ -1,16 +1,76 @@
 ---
 layout: page
-title: Résumé
+title: About
 permalink: /about/
 published: true
 ---
 
 <style type="text/css">
-    .page h1 {
-        text-align: center;
-        padding: 0px;
-        margin: 0px;
+    .highlighter-rouge {
+        border-radius: .5ex;
+        margin-left: .5em;
+        float: right;
     }
+    {{site.css_mobile}} {
+        /* mobile view specific CSS */
+        .highlighter-rouge {
+            float: initial;
+        }
+    }
+</style>
+
+<!-- My photo -->
+<span class="site-avatar">
+    <img alt="My photo" src="/images/profile-beach-2020.jpg" />
+</span>
+
+Currently, I'm pursuing my PhD in Computer Science at [The Pennsylvania State University](https://www.psu.edu/). I am advised by [Trent Jaeger](http://trentjaeger.com/).
+
+My research focuses on devising techniques to securely name file system artifacts when multiple file systems are used simultaneously.
+In the past, I have worked on compilers for shellcode generation, designing security-focused hardware extensions for RISC-V, and in-kernel user-space monitoring via Intel® Processor Trace.
+
+<!-- terms:
+studying the security aspects of fs
+improving the security
+hardening file systems
+safe use
+ -->
+
+<!--
+I am a PhD candidate at [The Pennsylvania State University](https://www.psu.edu/) and part of the [SIIS lab](https://cybersecurity.psu.edu/). My research focuses in OS Kernel Security, specifically Linux. My advisor is [Trent Jaeger](http://trentjaeger.com/).
+
+My research interests are in _Systems Security_ and _Operating Systems_.
+I have worked on compilers for shellcode generation, designing security-focussed hardware extensions, and user-space monitoring using Intel® Processor Trace. 
+Additionally, I also have development experience with Unix-like kernels.
+-->
+
+**Email**
+• [aditya.basu@psu.edu](mailto:aditya.basu@psu.edu)
+| **Links**
+• [Curriculum Vitae \[PDF\]](https://resume.0xa.fun/cv-adityabasu.pdf)
+• [Google Scholar](https://scholar.google.com/citations?user=NjtxVEoAAAAJ)
+• [dblp](https://dblp.uni-trier.de/pid/154/9562.html)
+
+## Education
+
+- **PhD Candidate** in _Computer Science_
+  at <a href="https://www.psu.edu/">Penn State (USA)</a><br />
+  <small>[
+    GPA = 3.85 (of 4)
+    | Expected 2023
+  ]</small>
+
+- **B.Tech.** in _Information & Communication Technology_
+  from <a href="https://www.daiict.ac.in">DAIICT (India)</a><br />
+  <small>[
+    Major GPA = 9.52 (of 10)
+    | Overall GPA = 8.55
+    | Graduated 2014
+  ]</small>
+
+
+<!-- CV Style Education
+<style type="text/css">
     ul.exp {
         display: flex;
         justify-content: space-between;
@@ -24,36 +84,13 @@ published: true
         text-align: right;
         font-style: italic;
     }
-    {{site.css_mobile}} {
-        /* mobile view specific CSS */
-    }
 </style>
 
-<!-- <a href="{{ site.baseurl }}/" class="site-avatar">
-    <img style="max-width: 100%" src="{{ site.favicon.svg }}" />
-</a> -->
-
----
-**Links.**
-[Curriculum Vitae \[PDF\]](https://resume.0xa.fun/cv-adityabasu.pdf)
-• [Google Scholar](https://scholar.google.com/citations?user=NjtxVEoAAAAJ)
-• [dblp](https://dblp.uni-trier.de/pid/154/9562.html)
-
----
-
-## About me
-I am a PhD candidate at [The Pennsylvania State University](https://www.psu.edu/) and part of the [SIIS lab](https://cybersecurity.psu.edu/). My research focuses in OS Kernel Security, specifically Linux. My advisor is [Trent Jaeger](http://trentjaeger.com/).
-
-My research interests are in _Systems Security_ and _Operating Systems_.
-I have worked on compilers for shellcode generation, designing security-focussed hardware extensions, and user-space monitoring using Intel® Processor Trace. 
-Additionally, I also have development experience with Unix-like kernels.
-
-## Education
 <ul class="exp">
     <li><strong>PhD Student</strong> in
         <em>Computer Science</em>
     </li>
-    <span class="dates">(exp.) 2022</span>
+    <span class="dates">(exp.) 2023</span>
 </ul>
 at <a href="https://www.psu.edu/">The Pennsylvania State University</a>, PA, USA.
 <br/>
@@ -70,13 +107,21 @@ from <a href="https://www.daiict.ac.in">Dhirubhai Ambani Institute</a>, Gujarat,
 GPA = 9.52 (of 10) in major; 8.55 overall
 
 <p></p>
+-->
 
 ## Publications
 
-2020
-:   **Automatic Generation of Compact Printable Shellcodes for x86**<br/>
+0.  **Unsafe at Any Copy: Name Collisions from Mixing Case Sensitivities**<br/>
+    _Aditya Basu_, Jack Sampson, Zhiyun Qian, Trent Jaeger.
+    In _21<sup>th</sup> USENIX Conference on File and Storage Technologies (FAST)_, 2023.<br/>
+    <small>[
+        Awarded **USENIX Student Grant**
+        | [link](https://www.usenix.org/conference/fast23/presentation/basu)
+    ]</small>
+
+0.  **Automatic Generation of Compact Printable Shellcodes for x86**<br/>
     Dhrumil Patel, _Aditya Basu_, Anish Mathuria.
-    In _14<sup>th</sup> USENIX Workshop on Offensive Technologies (WOOT)_.<br/>
+    In _14<sup>th</sup> USENIX Workshop on Offensive Technologies (WOOT)_, 2020.<br/>
     <small>[
         [link](https://www.usenix.org/conference/woot20/presentation/patel)
         | [ppt](https://www.usenix.org/system/files/woot20-paper17-slides-basu.pdf)
@@ -84,38 +129,61 @@ GPA = 9.52 (of 10) in major; 8.55 overall
         | acceptance rate = 33.33%, or 12/36
     ]</small>
 
-2020
-:   **Hardware Assisted Buffer Protection Mechanisms for Embedded RISC-V**<br/>
+0.  **Hardware Assisted Buffer Protection Mechanisms for Embedded RISC-V**<br/>
     Asmit De, _Aditya Basu_, Swaroop Ghosh, Trent Jaeger.
-    In _IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems_.<br/>
+    In _IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems_, 2020.<br/>
     <small>[
         [doi](http://dx.doi.org/10.1109/TCAD.2020.2984407)
         | impact factor = 2.168
     ]</small>
 
-2019
-:   **FIXER: Flow Integrity Extensions in Embedded RISC-V**<br/>
+0.  **FIXER: Flow Integrity Extensions in Embedded RISC-V**<br/>
     Asmit De, _Aditya Basu_, Swaroop Ghosh and Trent Jaeger.
-    In _Proceedings of Design, Automation and Test in Europe (DATE)_.<br/>
+    In _Proceedings of Design, Automation and Test in Europe (DATE)_, 2019.<br/>
     <small>[
         [doi](http://dx.doi.org/10.23919/DATE.2019.8714980)
         | acceptance rate = 24%
     ]</small>
 
-2014
-:   **Automatic Generation of Compact Alphanumeric Shellcodes for x86**<br/>
+0.   **Automatic Generation of Compact Alphanumeric Shellcodes for x86**<br/>
     _Aditya Basu_, Anish Mathuria, Nagendra Chowdary.
-    In Proceedings of 10<sup>th</sup> International Conference on Information Systems Security (ICISS).<br/>
+    In _Proceedings of 10<sup>th</sup> International Conference on Information Systems Security (ICISS)_, 2014.<br/>
     <small>[
         [doi](http://dx.doi.org/10.1007/978-3-319-13841-1_22)
         | <a href="{{site.assets}}/research/alpha-x86-ppt.pdf">ppt</a>
         | [code](https://bitbucket.org/mitthu/alpha_loaders/src)
         | acceptance rate = 19%, or 25/129
     ]</small>
+{: reversed="reversed"}
 
 
 ## Career
 
+- **Research Intern**             at _Microsoft Research_ `// Summer 2022`
+- **Software Engineering Intern** at _Google_             `// Summer 2019`
+- **Research Intern**             at _NIO_                `// Summer 2018`
+- **System Operations Engineer**  at _Media.net_          `// 2014-16`
+- **Software Developer Intern**   at _DAIICT_             `// Summer '13 & '14`
+
+<!-- Tabular career
+<style type="text/css">
+    .gap {
+        display: block;
+        width: 2em;
+    }
+</style>
+
+| --- | --- | ----------- |
+| **Research Intern** at _Microsoft Research_  | | Summer 2022 |
+| **Software Engineering Intern** at _Google_  | | Summer 2019 |
+| **Research Intern** at _NIO_                 | | Summer 2018 |
+| **System Operations Engineer** at _Media.net_| | 2014-16     | 
+| **Software Developer Intern** at _DAIICT_    | | Summer '13 & '14 |
+||<span class="gap" /> ||
+--->
+
+
+<!-- Full description (in CV)
 <ul class="exp">
     <li><strong>Software Engineering Intern</strong> at
         <a href="https://careers.google.com/locations/cambridge/">Google, Cambridge (USA)</a>
@@ -181,34 +249,59 @@ OBD-II diagnostics port.
 ]</small>
 <p></p>
 
+-->
+
 ## Skills
 
-\>10k SLOC
-:   C •
+- **10k SLOC:** <span class="gap" />
+    C •
     Python •
     Golang •
     bash •
     LaTeX (macros) •
     HTML
-
-5k --- 10k SLOC
-:   Django •
+- **5k --- 10k SLOC:** <span class="gap" />
+    Django •
     Puppet •
     Ansible •
     Java •
     CSS
-
-Utilities
-:   make •
+- **Utilities:** <span class="gap" />
+    make •
     git •
     Docker •
     strace •
     gdb
-
-Others
-:   Linux •
+- **Others:** <span class="gap" />
+    Linux •
     Mac OS X •
     Markdown
+
+<!-- Using a table
+<style type="text/css">
+    .gap {
+        width: .5em;
+    }
+</style>
+
+{% capture sloc10k %}
+      C
+    • Python
+    • Golang
+    • bash
+    • LaTeX (macros)
+    • HTML
+{% endcapture %}
+
+
+| -------------------- | --- | ---------------------------- |
+| **>10k SLOC**        |     | {{sloc10k | strip_newlines}} |
+| **5k --- 10k SLOC**  |     |  |
+| **Utilities**        |     |  |
+| **Others**           |     |  | 
+||<span class="gap" /> ||
+ -->
+
 
 <!--
 **Some legal stuff.**

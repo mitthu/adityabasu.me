@@ -252,12 +252,14 @@ img {
 .site-avatar {
   float: left;
   overflow: auto;
-  margin-right: 2em;
-  width: 150px;
+  margin: .5em 1em;
+  margin-left: 0;
+  width: 200px;
 
   @include mobile {
     float: none;
     display: block;
+    width: 100%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -265,6 +267,7 @@ img {
 
   img {
     width: 100%;
+    border-radius: 10px;
   }
 }
 
