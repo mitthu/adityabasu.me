@@ -93,6 +93,17 @@ var sigmoidGate = function() {
 
 # Image
 
+Code to add an image:
+{% raw %}
+```markdown
+![404 Image](/images/404.jpg)
+
+<!-- For posts -->
+![Resume banner]({{site.asset.post}}/20190705-resume.png)
+```
+{% endraw %}
+
+It looks like:
 ![404 Image](/images/404.jpg)
 
 
