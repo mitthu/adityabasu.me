@@ -10,8 +10,6 @@ tags:
   - wsl
 ---
 
-{%- include basepaths.html -%}
-
 Running 64-bit VirtualBox 6.0 VMs with Hyper-V does not work yet. So one possible solution is to turn off Hyper-V. However turning off Hyper-V from "Turn Windows Features On or Off" does not completely turn off Hyper-V.
 
 <!--more-->

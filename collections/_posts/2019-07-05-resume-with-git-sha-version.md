@@ -8,8 +8,6 @@ tags:
   - resume
 ---
 
-{%- include basepaths.html -%}
-
 > **tl;dr** Tagging resume using version numbers derived from git commit SHA. This helps in quickly retrieving any specific version of the resume. Also storing old PDF copies of the resume is not necessary.
 
 ## Workflow

@@ -10,8 +10,6 @@ tags:
   - pci
 ---
 
-{%- include basepaths.html -%}
-
 > **tl;dr** Notes while working with PCI.
 
 The 64-bit PCI registers are broken up as in to two 32-bit registers.

@@ -9,8 +9,6 @@ We will go through creating a favicon (an avatar), converting it to necessary im
 
 <!--more-->
 
-{%- include basepaths.html -%}
-
 First we need to create a favicon to add it to our website. For a personal blog I prefer using a personalized avatar. I used [avatarmaker.com](https://avatarmaker.com/) to create my avatar and downloaded the `svg` version to have a high quality image. Now the only bowsers that support `svg` favicons are Firefox and Safari. Hence it is a good idea to create a `png` version as well for say Chrome users.
 
 **Note:** You might also want to create an `.ico` version.

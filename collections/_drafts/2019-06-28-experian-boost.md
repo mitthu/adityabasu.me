@@ -7,7 +7,5 @@ tags:
   - experian
 ---
 
-{%- include basepaths.html -%}
-
 I tried out experian credit boost. It does not work if you pay utility bills
 using credit cards; bummer!

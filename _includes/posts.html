@@ -1,9 +1,0 @@
-{% for post in site.posts %}
-  <ul>
-  {% if post.categories contains include.category %}
-  <li class="post">
-    <span class="post-date">{{ post.date | date_to_string }} &raquo;</span> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-  </li>
-  {% endif %}
-  </ul>
-{% endfor %}

@@ -15,8 +15,6 @@ tags:
   - core dump
 ---
 
-{%- include basepaths.html -%}
-
 The goal is to setup a Linux based VirtualBox VM which can be debugged from the host, or another VM.
 To debug using another physical machine, see [Debug from another (physical) machine](#debug-from-another-physical-machine) section.
 

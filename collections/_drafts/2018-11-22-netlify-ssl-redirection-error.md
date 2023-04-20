@@ -10,8 +10,6 @@ tags:
   - blog
 ---
 
-{%- include basepaths.html -%}
-
 Enforcing redirect rule from http to https and pointing the naked domain to Netlify's load balancer IP causes invalid cert. being served when accessing the naked domain. This post details the solution using redirect rules.
 
 <!--more-->
