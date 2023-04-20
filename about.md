@@ -20,7 +20,7 @@ published: true
 </style>
 
 <!-- My photo -->
-<span class="site-avatar">
+<span class="my-photo">
     <img alt="My photo" src="/images/profile-beach-2020.jpg" />
 </span>
 

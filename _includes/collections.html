@@ -12,8 +12,11 @@
 
 {% if this_collection.docs != empty %}
 <div class="post-listing">
-  <h2 class="category">{{ this_collection.name }}</h2>
+  <h1 class="category">
+    {{ this_collection.name }}
+  </h1>
   <span class="category-description"># {{ this_collection.description }}</span>
+
 		{% assign prev_year = 0 %}
 	  {% for post in this_collection.docs reversed %}
 	  
@@ -21,13 +24,13 @@
 	  {% capture year %}{{post.date | date: "%Y"}}{% endcapture %}
 	  {% if year != prev_year %}
 	  	{% assign prev_year = year %}
-	  	<strong class="post-year">{{year}}</strong>
+	  	<h2 class="post-year">{{year}}</h2>
   	{% endif %}
 
   	<!-- Print post -->
   	<div class="post-entry">
-  	&#x2022;
-	  <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+	    <span class="post-date">{{ post.date | date: "%b %d" }}</span>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 	  </div>
 	  {% endfor %}
 </div>

@@ -1,4 +1,7 @@
 /* Center images */
+
+@import "_variables";
+
 img {
   display: block;
   margin-left: auto;
@@ -40,5 +43,29 @@ figure.image-caption {
     background-color: $theme-bgfigure;
     border-top: 5px solid $theme-bgfigure;
     width: 100%;
+  }
+}
+
+/* Photo in /about/ page */
+.my-photo {
+  float: left;
+  overflow: auto;
+  margin: .5em 1em;
+  margin-left: 0;
+  width: 200px;
+
+  @include mobile {
+    float: none;
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 10px;
   }
 }

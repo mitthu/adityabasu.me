@@ -1,6 +1,7 @@
 /* Syntax highlighting */
 
 @import "_variables";
+@import "_mixins";
 
 code {
   font-family: $font-mono;

@@ -29,29 +29,6 @@
   }
 }
 
-
-.site-avatar {
-  float: left;
-  overflow: auto;
-  margin: .5em 1em;
-  margin-left: 0;
-  width: 200px;
-
-  @include mobile {
-    float: none;
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  img {
-    width: 100%;
-    border-radius: 10px;
-  }
-}
-
 .site-info {
   width: 33%;
   display: inline-block;
@@ -61,6 +38,24 @@
     display: block;
     margin: 0 auto;
     width: auto;
+  }
+}
+
+.site-avatar {
+  float: left;
+  // display: inline;
+  width: 2em;
+  height: 2em;
+  margin-right: 15px;
+
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  img {
+    border-radius: 5px;
   }
 }
 
