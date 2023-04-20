@@ -6,11 +6,11 @@ published: true
 sitemap: false
 ---
 
+Docs about writing a new post, or updating the website.
+
+Website build status for the latest commit:
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7f2d2399-781d-448b-a637-c3f64dccede5/deploy-status)](https://app.netlify.com/sites/adityabasu/deploys)
-
-# Pages
-
-* [Tags](/tags/) -- hidden navigation
 
 # Template
 [https://prose.io/#mitthu/adityabasu.me/tree/master/collections/_posts](https://prose.io/#mitthu/adityabasu.me/tree/master/collections/_posts "Create a post")
@@ -28,6 +28,25 @@ tags:
   - pushover
   - sysad
 ```
+
+# Commit messages
+
+| Type       | Purpose                                        |
+|------------|------------------------------------------------|
+| **page**   | tweak or add a page                            |
+| **post**   | add/modify/delete a post                       |
+| **theme**  | modify the page layout, css, code colors, etc. |
+| **config** | tweak config files                             |
+
+## Validate Pages
+When changing the **theme**, verify that the following pages look okay:
+
+* [/](/)
+* [/about](/about)
+* [/start](/start) (This page!)
+* [/tags](/tags)
+* [/blog/2020/03/kgdboc-setup](/blog/2020/03/kgdboc-setup)
+* [/blog/2019/06/pci-quirks](/blog/2019/06/pci-quirks)
 
 # Table of Contents (toc)
 
