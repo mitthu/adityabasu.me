@@ -1,0 +1,34 @@
+/* Tables */
+
+@import "_variables";
+
+table {
+    margin: 1em 0;
+    // box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+th, td {
+  padding: .2em .5em;
+}
+
+thead {
+    background-color: $theme-tbl-bghead;
+    color: $theme-tbl-fghead;
+    font-weight: bold;
+    text-align: left;
+}
+
+tbody  {
+  tr {
+    border-bottom: 1px solid $theme-tbl-sep;
+  }
+
+  tr:nth-of-type(even) {
+    background-color: $theme-tbl-bgeven;
+  }
+
+  tr:last-of-type {
+    border-bottom: 2px solid $theme-tbl-border;
+  }
+
+}

@@ -16,8 +16,8 @@ code.highlighter-rouge {
 /* Block fenced code */
 div.highlighter-rouge {
   background-color: $theme-bgcode;
-  padding: 0 8px;
-  margin: 15px 0;
+  padding: 0;
+  margin: 0;
 
   /* for page-wide code block */
   // width: 100vw;
@@ -34,10 +34,18 @@ div.highlighter-rouge {
     width: $page-width;
   }
 
+  /* Reset default table layout */
   table.rouge-table {
+    margin: 0;
+    border-collapse: collapse;
+
     th, td {
-    padding-top: 8px;
-    padding-bottom: 8px;
+      padding: 8px;
+    }
+
+    tr {
+      border-bottom: unset;
+      background-color: unset;
     }
   }
 

@@ -71,6 +71,14 @@ $theme-bgfigure:    $lightGray;
 $theme-bgtoc:       $lightGray;
 $theme-bgcode:      $lightGray;
 $theme-bgfooter:    $lightGray;
+$theme-sep:         #ddd; /* line seperator */
+
+$theme-tbl-fghead:  #fff;       /* tables  */
+$theme-tbl-bghead:  $darkGray;
+$theme-tbl-bgrow:   #ddd;
+$theme-tbl-bgeven:  #f3f3f3;
+$theme-tbl-sep:     $theme-sep;
+$theme-tbl-border:  $darkGray;
 
 /* Font family */
 $font:         $sourcesanspro, $helvetica;
