@@ -63,7 +63,7 @@ $theme-title:      $darkerGray; /* site's name, nav bar */
 $theme-header:     $darkerGray; /* h1-h6, except h4 */
 $theme-subheader:  $darkGray; /* h4, site's description, blockquote */
 $link:             $cobaltBlue;
-$link-hover:       darken($link, 15%);
+$link-hover:       darken($amber, 15%);
 
 $theme-bgcolor:     $white;
 $theme-bgselection: $amber; /* selecting text */

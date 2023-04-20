@@ -64,6 +64,7 @@
   color: $theme-title;
   font-family: $font-head;
   font-size: $font-size-h2;
+  border-bottom: initial;
 
   @include mobile {
     font-size: $font-size-h1;
