@@ -10,6 +10,11 @@ img {
   text-align: center;
 }
 
+/* Images that are links should be inline */
+a > img {
+  display: initial;
+}
+
 /* Image */
 figure.image-caption {
   // font

@@ -1,0 +1,131 @@
+/*********************/
+/* LAYOUT / SECTIONS */
+/*********************/
+
+@import "_variables";
+
+.masthead {
+  padding: 0 $pad;
+  margin: 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: $theme-bgcolor;
+
+  /* Position over sidebar */
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  /* Center align */
+  height: $header-height;
+  line-height: $header-height;
+
+  @include mobile {
+    text-align: center;
+
+    height: unset;
+    line-height: unset;
+    padding: 0.8 * $pad;
+  }
+}
+
+
+.site-avatar {
+  float: left;
+  overflow: auto;
+  margin: .5em 1em;
+  margin-left: 0;
+  width: 200px;
+
+  @include mobile {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+.site-info {
+  width: 33%;
+  display: inline-block;
+
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    width: auto;
+  }
+}
+
+.site-name {
+  margin: 0;
+  color: $theme-title;
+  font-family: $font-head;
+  font-size: $font-size-h2;
+
+  @include mobile {
+    font-size: $font-size-h1;
+  }
+}
+
+.site-description {
+  margin: -5px 0 0 0;
+  color: $theme-subheader;
+  font-family: $font-head;
+  font-size: 16px;
+
+  @include mobile {
+    margin: 3px 0;
+  }
+}
+
+/* Pages in my website */
+.site-nav {
+  padding: 0;
+  margin: 0;
+  font-family: $font-head;
+  font-size: $font-size-normal;
+  width: 66%;
+  text-align: right;
+  display: inline-block;
+
+  @include mobile {
+    display: block;
+    font-size: 16px;
+    width: auto;
+    text-align: center;
+  }
+
+  a {
+    color: $theme-title;
+    text-align: right;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+    @include mobile {
+      margin: 0 10px;
+      color: $theme;
+    }
+  }
+}
+
+.wrapper-footer {
+  margin-top: 50px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: $theme-bgfooter;
+  z-index: 10;
+  display: none;
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+}

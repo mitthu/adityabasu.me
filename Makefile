@@ -6,6 +6,7 @@ export PATH := $(HOME)/.ruby/bin:$(PATH)
 
 .PHONY: drafts
 drafts:
+	echo $(GEM_HOME)
 	bundle exec jekyll serve --drafts --trace
 
 # Run the production version of the site
@@ -25,7 +26,7 @@ ifeq ($(OS), Darwin)
 	@brew install imagemagick@6
 	@brew link --force imagemagick@6
 endif
-	
+
 	@mkdir -p $(GEM_HOME)
 	@echo "Update gems..."
 	@gem update --no-doc

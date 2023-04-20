@@ -18,6 +18,11 @@ feedburner_url: https://feeds.feedburner.com/mitthu
 # Flags below are optional
 #
 
+# Defaults
+defaults:
+  - values:
+      toc: true
+
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble: 
@@ -79,6 +84,14 @@ collections:
     output: true
     permalink: /:collection/:year/:month/:title/
 
+# TOC
+toc:
+  list_id: ''
+  list_class: toc
+  sublist_class: ''
+  min_level: 1
+  max_level: 6
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #
@@ -123,7 +136,7 @@ plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - github-pages
   - jekyll-seo-tag
-  - jekyll-admin
+  - jekyll-toc
 
 # Exclude these files from your production _site
 exclude:

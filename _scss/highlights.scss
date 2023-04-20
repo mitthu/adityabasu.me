@@ -1,4 +1,7 @@
 /* Syntax highlighting */
+
+@import "_variables";
+
 code {
   font-family: $font-mono;
   font-size: $font-size-code;
@@ -17,9 +20,9 @@ div.highlighter-rouge {
   margin: 15px 0;
 
   /* for page-wide code block */
-  width: 100vw;
-  left: calc(-50vw + 50%);
-  position: relative;
+  // width: 100vw;
+  // left: calc(-50vw + 50%);
+  // position: relative;
 
   /* for scrollbars */
   display: block;
@@ -28,7 +31,7 @@ div.highlighter-rouge {
   .highlight {
     background-color: $theme-bgcode;
     margin: 0 auto; /* center text */
-    width: $pagewidth;
+    width: $page-width;
   }
 
   table.rouge-table {
@@ -40,6 +43,8 @@ div.highlighter-rouge {
 
   .rouge-code {
     padding-left: 6px;
+    /* Firefox v122: Align line numbers & code */
+    vertical-align: middle;
   }
 
   .rouge-gutter {

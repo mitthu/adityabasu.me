@@ -85,13 +85,18 @@ $font-size-code:         14px;
 $font-size-code-caption: 15px;
 $font-size-img-caption:  16px;
 $font-size-excerpt:      18px;
+$font-size-title:        $font-size-normal + 12;
 $font-size-h1:           $font-size-normal + 12;
 $font-size-h2:           $font-size-normal + 6;
 $font-size-h3:           $font-size-normal + 2;
 $font-size-h4:           $font-size-normal;
 
 /* Dimentions of website */
-$pagewidth: 720px;
+$page-width:    740px;
+$pad:           2rem;
+$sidebar-width: 18rem;
+$header-height: 4rem;
+$footer-height: 5rem;
 
 /* Mobile breakpoints */
 @mixin mobile {

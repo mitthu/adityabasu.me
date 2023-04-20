@@ -20,8 +20,6 @@ tags:
 The goal is to setup a Linux based VirtualBox VM which can be debugged from the host, or another VM.
 To debug using another physical machine, see [Debug from another (physical) machine](#debug-from-another-physical-machine) section.
 
-{% include toc.html %}
-
 # Introduction
 kgdboc is the debugger that helps debug the kernel over a remote gdb session.
 

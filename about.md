@@ -44,6 +44,8 @@ I have worked on compilers for shellcode generation, designing security-focussed
 Additionally, I also have development experience with Unix-like kernels.
 -->
 
+<br />
+
 **Email**
 • [aditya.basu@psu.edu](mailto:aditya.basu@psu.edu)
 | **Links**

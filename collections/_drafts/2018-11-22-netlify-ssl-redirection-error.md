@@ -4,6 +4,7 @@ title: Netlify naked domain invalid SSL cert.
 published: true
 excerpt_separator: <!--more-->
 category: website
+toc: false
 tags: 
   - netlify
   - blog

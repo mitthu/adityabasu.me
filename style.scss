@@ -4,9 +4,6 @@
 @import "_reset";
 @import "_mixins";
 @import "_variables";
-@import "_highlights";
-@import "css/syntax_highlight_themes/tomorrow.css";
-@import "_images";
 
 /**************/
 /* BASE RULES */
@@ -26,94 +23,11 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: $pagewidth;
-  padding: 0 10px;
-  width: 100%;
+  padding: 0 $pad;
 
   /* Make sure floats don't come outsize the border */
   overflow: auto;
 }
-
-/* Classes to support a sidebar */
-.wrapper-main {
-  display: block;
-  overflow: visible;
-}
-
-.content {
-  display: inline-block;
-  vertical-align: top;
-  width: 80%;
-
-  @include mobile {
-    width: 100%;
-  }
-}
-
-.sidebar {
-  display: inline-block;
-  vertical-align: top;
-  width: 15%;
-  position: fixed;
-  margin-left: 1em;
-
-  /* Initially hidden so that if JS is not available,
-     then we don't show the heading ("Navigation").
-     JS toggles this after populating the sidebar. */
-  visibility: hidden;
-
-  @include mobile {
-    display: none;
-  }
-}
-
-.sidebar-toc-head {
-  display: inline-block;
-  font-weight: bold;
-  margin-bottom: 0.5em;
-  border-bottom: 1px dotted;
-}
-
-
-/*@media screen and (min-width: 900px) {
-  .content {
-    display: inline-block;
-    vertical-align: top;
-    max-width: 740px;
-    width: 80%;
-    @include mobile {
-      width: 100%;
-    }
-  }
-
-  .sidebar {
-    display: inline-block;
-    vertical-align: top;
-    min-width: 2000px;
-    width: 19%;
-    @include mobile {
-      display: none;
-    }
-  }
-}*/
-
-/* Using Grid Layout (supported only on modern browsers)
-.wrapper-main {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 10px;
-}
-
-.content {
-  grid-column: 1 / 4;
-}
-
-.sidebar {
-  border: 1px solid black;
-  grid-column: 4 / 5;
-}
-*/
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-head;
@@ -128,7 +42,20 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.4;
   }
 }
-  
+
+.title {
+  /* Applied to h1 */
+  margin-top: 0;
+  padding-top: 0;
+  line-height: unset;
+  font-size: $font-size-title;
+
+  @include mobile {
+    text-align: center;
+    font-size: $font-size-h1;
+  }
+}
+
 h1 {  
   font-size: $font-size-h1;
   margin-top: 2.5ex;
@@ -161,11 +88,11 @@ p {
 a {
   color: $link;
   text-decoration: none;
-	cursor: pointer;
+  cursor: pointer;
 
   &:hover, &:active {
     color: $link-hover;
-  	text-decoration: underline;
+    text-decoration: underline;
   }
 }
 
@@ -204,7 +131,15 @@ img {
 
 .date {
   font-style: italic;
-  color: $theme-subheader;
+  color: $theme-header;
+
+  /* Decorate */
+  padding-bottom: 1em;
+
+  @include mobile {
+    padding-bottom: 0;
+    text-align: center;
+  }
 }
 
 // Specify the color of the selection
@@ -217,252 +152,20 @@ img {
   background: $theme-bgselection;
 }
 
-// Nicolas Gallagher's micro clearfix hack
-// http://nicolasgallagher.com/micro-clearfix-hack/
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/*********************/
-/* LAYOUT / SECTIONS */
-/*********************/
-
-.wrapper-masthead {
-  margin-bottom: 15px;
-  /*padding-bottom: 5px;*/
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-}
-
-.masthead {
-  padding: 20px 0;
-  vertical-align: text-bottom;
-
+/* Show only on mobile devices */
+.mobile-only {
+  display: none;
   @include mobile {
-    text-align: center;
-  }
-}
-
-.site-avatar {
-  float: left;
-  overflow: auto;
-  margin: .5em 1em;
-  margin-left: 0;
-  width: 200px;
-
-  @include mobile {
-    float: none;
     display: block;
-    width: 100%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  img {
-    width: 100%;
-    border-radius: 10px;
   }
 }
 
-.site-info {
-  float: left;
-  width: 33%;
 
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-    width: auto;
-  }
-}
+/* Additional Imports */
+@import "header";
+@import "pagelayout";
+@import "highlights";
+@import "images";
+@import "post";
 
-.site-name {
-  margin: 0;
-  color: $theme-title;
-  font-family: $font-head;
-  font-size: 28px;
-}
-
-.site-description {
-  margin: -5px 0 0 0;
-  color: $theme-subheader;
-  font-family: $font-head;
-  font-size: 16px;
-  
-  @include mobile {
-    margin: 3px 0;
-  }
-}
-
-nav {
-  float: right;
-  padding-top: 12px;
-  margin: 0px;
-  font-family: $font-head;
-  font-size: $font-size-normal;
-  width: 66%;
-  text-align: right;
-
-  @include mobile {
-    float: none;
-    display: block;
-    font-size: 16px;
-    width: auto;
-    text-align: center;
-  }
-
-  a {
-    color: $theme-title;
-    text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
-
-    @include mobile {
-      margin: 0 10px;
-      color: $theme;
-    }
-  }
-}
-
-.toc {
-  border: 1px solid darken($theme-bgtoc, 15%);
-  background: $theme-bgtoc;
-	/*padding-top: 12px;*/
-  padding: 1em;
-  margin: 0px;
-  display: inline-block;
-  font-family: $font-head;
-
-	.toc-head {
-		@extend h4;
-	}
-
-	/* kramdown encloses all html tags in <p> because of
-	 * "parse_block_html: true". Look at _include/toc.html.
-	 */
-	p {
-		padding: 0px;
-		margin: 0px;
-	}
-  /* 1.1, 1.2.1 etc. style lists
-   * Refer: https://stackoverflow.com/questions/5050843/present-lists-and-sublists-in-html
-   */
-  ol { counter-reset: item }
-  ol > li { display: block }
-  ol > li:before {
-    content: counters(item, ".") ". ";
-    counter-increment: item
-  }
-
-	#markdown-toc {
-		padding-top: 0px;
-		margin-top: 4px;
-	}
-}
-
-//
-// .main
-//
-
-.posts {
-  .category {
-    margin: 0px;
-  }
-
-  .category-description {
-    margin: 0px;
-    font-family: $font-mono;
-    font-size: $font-size-code;
-  }
-
-  strong {
-    display: block;
-    margin-top: 2ex;
-  }
-
-  .post-entry {
-    margin-left: 1.5em;
-  }
-}
-
-.post {
-  font-size: $font-size-normal;
-  margin-bottom: 1.5ex;
-
-  blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $theme-subheader;
-    padding: 0.1em 1em;
-    color: $theme-subheader;
-    font-size: 22px;
-    font-style: italic;
-  }
-
-  .comments {
-    margin-top: 2ex;
-  }
-
-  .read-more {
-    text-transform: uppercase;
-    font-size: 15px;
-  }
-
-  .post-excerpt {
-    color: $theme;
-    margin-left: 2em;
-    padding-left: 0.5em;
-    border-left: 2px solid #ddd;
-    font-family: $font-excerpt;
-    font-size: $font-size-excerpt;
-
-    p {
-      margin: 0em;
-    }
-  }
-}
-
-dt {
-  font-weight: bold;
-}
-
-dd {
-  margin-left: 2em;
-  padding-bottom: 2ex;
-}
-
-sup {
-  vertical-align: super;
-  font-size: 0.7em;
-}
-
-sub {
-  vertical-align: sub;
-  font-size: 0.7em;
-}
-
-small {
-  font-size: 0.9em;
-}
-
-.highlight {
-  font-size: $font-size-code;
-}
-
-.wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $theme-bgfooter;
-}
-
-footer {
-  padding: 20px 0;
-  text-align: center;
-}
+@import "css/syntax_highlight_themes/tomorrow.css";

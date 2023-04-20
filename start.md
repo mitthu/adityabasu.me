@@ -1,17 +1,16 @@
 ---
-layout: page
+layout: navpage
 title: Start Here
 permalink: /start/
 published: true
-toc: true
 sitemap: false
 ---
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7f2d2399-781d-448b-a637-c3f64dccede5/deploy-status)](https://app.netlify.com/sites/adityabasu/deploys)
 
-* [Tags](/tags/) -- hidden navigation
+# Pages
 
-{% include toc.html %}
+* [Tags](/tags/) -- hidden navigation
 
 # Template
 [https://prose.io/#mitthu/adityabasu.me/tree/master/collections/_posts](https://prose.io/#mitthu/adityabasu.me/tree/master/collections/_posts "Create a post")
@@ -30,24 +29,23 @@ tags:
   - sysad
 ```
 
-# Add Table of Contents (toc)
+# Table of Contents (toc)
 
-[TOC Documentation](https://kramdown.gettalong.org/converter/html.html#toc) is here.
+[TOC Documentation](https://github.com/toshimaru/jekyll-toc) is here.
+The table of contents is automatically added to the posts and navpage.
 
-{% raw %}
-
-For TOC use --
-```
-{% include toc.html %}
-```
-
-To skip a heading from the toc,
+To omit a heading from TOC:
 ```markdown
 # the heading to skip...
 {:.no_toc}
 ```
 
-{% endraw %}
+To omit the entire TOC, add the following to the front matter:
+```yaml
+toc: false
+```
+
+The official way to create TOC from kramdown is [here](https://kramdown.gettalong.org/converter/html.html#toc).
 
 # Posts
 ```
@@ -81,7 +79,7 @@ sigmoidGate.prototype = {
 }
 ```
 
-With line numbers:
+For line numbers, follow the code block with `{: .showlineno}`. Note that Firefox (v112) add extra padding to the top and bottom.
 ```javascript
 var sigmoidGate = function() {
   // helper function

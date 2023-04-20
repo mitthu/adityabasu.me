@@ -12,8 +12,6 @@ tags:
 
 > **tl;dr** Tagging resume using version numbers derived from git commit SHA. This helps in quickly retrieving any specific version of the resume. Also storing old PDF copies of the resume is not necessary.
 
-{% include toc.html %}
-
 ## Workflow
 
 My resume is typeset using LaTeX and revision controlled under `git`. There is a `Makefile` in the root directory to take care of compiling the resume and producing the final PDF. My old resume editing workflow is roughly -

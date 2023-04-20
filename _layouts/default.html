@@ -24,59 +24,39 @@
 
     <!-- SEO tags -->
     {% seo %}
-
-    <!-- NetlifyCMS -->
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">          
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description"><i>{{ site.description }}</i></p>
-          </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">blog</a>
-          • <a href="{{ site.baseurl }}/about/">about</a>
-          </nav>
-        </header>
+    <header class="masthead">
+      <div class="site-info">
+        <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+        <!-- <p class="site-description"><i>{{ site.description }}</i></p> -->
       </div>
-    </div>
 
-    <div id="main" role="main" class="container wrapper-main">
-      {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
+      <div class="site-nav">
+        <a href="{{ site.baseurl }}/">blog</a>
+        • <a href="{{ site.baseurl }}/about/">about</a>
       </div>
-    </div>
+    </header>
 
+    {{ content }}
+
+    <!-- Footer -->
+    <!--
+         <div class="wrapper-footer">
+         <div class="container">
+         <footer class="footer">
+         {% include svg-icons.html %}
+         </footer>
+         </div>
+         </div>
+    -->
     {% include analytics.html %}
 
     <!-- Get jQuery -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script> -->
 
-    <!--
-      For NetlifyCMS
-      See: https://www.netlifycms.org/docs/add-to-your-site/
-    -->
     <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
-          }
-        });
-      }
     </script>
 
   </body>

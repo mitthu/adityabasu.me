@@ -1,0 +1,106 @@
+/*****************/
+/*    Content    */
+/*****************/
+
+@import "_variables";
+
+.post {
+  font-size: $font-size-normal;
+  margin-bottom: 1.5ex;
+  max-width: $page-width;
+  margin: 0 auto;
+
+  blockquote {
+    margin: 1.8em .8em;
+    border-left: 2px solid $theme-subheader;
+    padding: 0.1em 1em;
+    color: $theme-subheader;
+    font-size: 22px;
+    font-style: italic;
+  }
+
+  .comments {
+    margin-top: 2ex;
+  }
+
+  .read-more {
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+
+  .post-excerpt {
+    color: $theme;
+    margin-left: 2em;
+    padding-left: 0.5em;
+    border-left: 2px solid #ddd;
+    font-family: $font-excerpt;
+    font-size: $font-size-excerpt;
+
+    p {
+      margin: 0em;
+    }
+  }
+}
+
+/* Inline TOC */
+.content .toc {
+  border: 1px solid darken($theme-bgtoc, 15%);
+  background: $theme-bgtoc;
+  padding: 1rem $pad;
+  margin-top: 1rem;
+  display: none;
+  font-family: $font-head;
+
+  @include mobile {
+    display: inline-block;
+  }
+}
+
+/* List of all Posts */
+.post-listing {
+  .category {
+    margin: 0px;
+  }
+
+  .category-description {
+    margin: 0px;
+    font-family: $font-mono;
+    font-size: $font-size-code;
+  }
+
+  strong {
+    display: block;
+    margin-top: 2ex;
+  }
+
+  .post-entry {
+    margin-left: 1.5em;
+  }
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 2em;
+  padding-bottom: 2ex;
+}
+
+sup {
+  vertical-align: super;
+  font-size: 0.7em;
+}
+
+sub {
+  vertical-align: sub;
+  font-size: 0.7em;
+}
+
+small {
+  font-size: 0.9em;
+}
+
+.highlight {
+  font-size: $font-size-code;
+}
