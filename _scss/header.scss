@@ -43,15 +43,11 @@
 
 .site-avatar {
   float: left;
-  // display: inline;
-  width: 2em;
-  height: 2em;
+  width: 3em;
   margin-right: 15px;
 
   @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
+    display: none;
   }
 
   img {
@@ -104,9 +100,10 @@
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
+    margin: 0 .4em;
 
     @include mobile {
-      margin: 0 10px;
+      margin: 0 .1em;
       color: $theme;
     }
   }
