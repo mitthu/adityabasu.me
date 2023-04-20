@@ -146,6 +146,9 @@ exclude:
     - README.md
     - Vagrantfile
     - archive
+    - Makefile
+    - _redirects
+    - CNAME
 
 # Include the following files in the production _site
 include:
