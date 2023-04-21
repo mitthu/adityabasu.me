@@ -50,6 +50,9 @@ $sourcesanspro: 'Source Sans Pro', sans-serif;
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,700,400italic,700italic);
 $robotomono: 'Roboto Mono',;
 
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+$spacegrotesk: 'Space Grotesk';
+
 /* Default fonts */
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -84,7 +87,7 @@ $theme-tbl-border:  $darkGray;
 $font:         $sourcesanspro, $helvetica;
 $font-img:     $sourcesanspro, $helvetica;
 $font-excerpt: $sourcesanspro, $helvetica;
-$font-head:    $sourcesanspro, $helvetica;
+$font-head:    $spacegrotesk, $sourcesanspro, $helvetica;
 $font-mono:    $robotomono, $bitstream;
 
 /* Font size */

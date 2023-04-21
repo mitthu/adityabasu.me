@@ -32,10 +32,11 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-head;
   color: $theme-header;
-  font-weight: bold;
+  font-weight: semi-bold;
 
   line-height: 1.7;
-  margin: 0 0 15px;
+  margin-top: 2.5ex;
+  margin-bottom: 15px;
   padding: 0;
 
   @include mobile {
@@ -49,34 +50,36 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 0;
   line-height: unset;
   font-size: $font-size-title;
+  font-weight: bold;
   border-bottom: initial;
 
   @include mobile {
     text-align: center;
     font-size: $font-size-h1;
   }
-}
 
-h1 {  
-  font-size: $font-size-h1;
-  margin-top: 2.5ex;
-  border-bottom: 2px solid $theme-sep;
   a {
     color: inherit;
   }
 }
 
+h1 {  
+  font-size: $font-size-h1;
+  font-weight: bold;
+  border-bottom: 2px solid $theme-sep;
+}
+
 h2 {  
-  margin-top: 2.5ex;
   font-size: $font-size-h2;
-  color: lighten($theme, 30%);
+  font-weight: semi-bold;
   border-bottom: 1px solid $theme-sep;
 }
 
 h3 {  
   font-size: $font-size-h3;
-  color: lighten($theme, 30%);
   font-style: italic;
+  border-bottom: 1px solid $theme-sep;
+  color: lighten($theme, 30%);
 }
 
 h4 {  

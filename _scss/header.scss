@@ -107,6 +107,7 @@
   color: $theme-title;
   font-family: $font-head;
   font-size: $font-size-h2;
+  font-weight: bold;
 
   /* Align w.r.t. site-name
    * https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align
@@ -116,6 +117,10 @@
   @include mobile {
     display: block;
     font-size: $font-size-h1;
+  }
+
+  a {
+    color: $theme-header;
   }
 }
 
