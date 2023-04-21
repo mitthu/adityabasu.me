@@ -6,9 +6,6 @@
 
 .post {
   font-size: $font-size-normal;
-  margin-bottom: 1.5ex;
-  max-width: $page-width;
-  margin: 0 auto;
 
   blockquote {
     margin: 1.8em .8em;
@@ -43,7 +40,7 @@
  }
 
 /* Inline TOC */
-.content .toc {
+.content-padding .toc {
   border: 1px solid darken($theme-bgtoc, 15%);
   background: $theme-bgtoc;
   padding: 1rem $pad;

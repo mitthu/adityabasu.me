@@ -27,17 +27,26 @@
   </head>
 
   <body>
-    <header class="masthead">
-      <div class="site-info">
+    <header class="topbar">
+      <div class="topbar-padding">
         <img class="site-avatar" src="{{ site.avatar }}"></img>
-        <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-        <!-- <p class="site-description"><i>{{ site.description }}</i></p> -->
-      </div>
 
-      <div class="site-nav">
-        <a href="{{ site.baseurl }}/">Blog</a>
-        •
-        <a href="{{ site.baseurl }}/about/">About</a>
+        <div class="topbar-container">
+
+          <span class="topbar-left">
+            <span class="site-name">
+              <a href="{{ site.baseurl }}/">{{ site.name }}</a>
+            </span>
+            <span class="site-description">{ {{ site.description }} }</span>
+          </span>
+
+          <span class="topbar-right site-pages">
+            <a href="{{ site.baseurl }}/">Blog</a>
+            •
+            <a href="{{ site.baseurl }}/about/">About</a>
+          </span>
+        </div>
+
       </div>
     </header>
 

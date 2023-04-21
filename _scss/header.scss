@@ -4,15 +4,15 @@
 
 @import "_variables";
 
-.masthead {
-  padding: 0 $pad;
+.topbar {
+  padding: 0;
   margin: 0;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid $theme-sep;
   background-color: $theme-bgcolor;
 
   /* Position over sidebar */
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 10;
 
@@ -21,30 +21,25 @@
   line-height: $header-height;
 
   @include mobile {
-    text-align: center;
-
+    position: initial;
     height: unset;
     line-height: unset;
-    padding: 0.8 * $pad;
   }
 }
 
-.site-info {
-  width: 33%;
-  display: inline-block;
+.topbar-padding {
+  padding: 0 $pad;
+  margin: 0;
 
   @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-    width: auto;
+    text-align: center;
+    padding: 0.8 * $pad;
   }
 }
 
 .site-avatar {
   float: left;
-  width: 3em;
-  margin-right: 15px;
+  width: $header-height;
 
   @include mobile {
     display: none;
@@ -55,44 +50,98 @@
   }
 }
 
+/*
+ *Align objects on same line:
+ *
+ *   ________________________________
+ *  |                                |
+ *  | child-1                child-2 |
+ *  |________________________________|
+ *
+ *   - parent:  position: relative
+ *      (div)
+ *   - child-1: position: abosolute
+ *              top: 0;
+ *              left: 10px;
+ *
+ *   - child-2: position: abosolute
+ *              top: 0;
+ *              right: 10px;
+ */
+
+.topbar-container {
+  position: relative;
+
+  @include mobile {
+    position: initial;
+    margin: 0 auto;
+  }
+}
+
+.topbar-left {
+  padding-left: $header-height + $pad;
+  display: inline-block;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @include mobile {
+    position: static;
+    padding: 0;
+    padding-bottom: $pad-mobile;
+  }
+}
+
+.topbar-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  @include mobile {
+    position: static;
+  }
+}
+
 .site-name {
-  margin: 0;
   color: $theme-title;
   font-family: $font-head;
   font-size: $font-size-h2;
-  border-bottom: initial;
+
+  /* Align w.r.t. site-name
+   * https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align
+   */
+  vertical-align: middle;
 
   @include mobile {
+    display: block;
     font-size: $font-size-h1;
   }
 }
 
 .site-description {
-  margin: -5px 0 0 0;
   color: $theme-subheader;
   font-family: $font-head;
   font-size: 16px;
 
+  vertical-align: middle;
+
   @include mobile {
+    display: block;
     margin: 3px 0;
   }
 }
 
 /* Pages in my website */
-.site-nav {
-  padding: 0;
-  margin: 0;
+.site-pages {
   font-family: $font-head;
   font-size: $font-size-normal;
-  width: 66%;
   text-align: right;
-  display: inline-block;
 
   @include mobile {
-    display: block;
     font-size: 16px;
-    width: auto;
     text-align: center;
+    display: block;
   }
 
   a {

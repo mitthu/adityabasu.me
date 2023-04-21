@@ -4,30 +4,66 @@
 
 @import "_variables";
 
-/* Regular Page */
-.page {
-  margin: 0 auto;
-  padding: $pad;
-  max-width: $page-width;
-}
-
-/* Split Page: Content */
-.content {
-  margin: 0 auto;
-  padding: $pad;
-  margin-left: $sidebar-width + $pad + $pad;
-
-  /* Positioning */
-  top: $header-height;
-  bottom: 0;
-  overflow: auto;
+/*
+ * Single column layout:
+ *  ___________________________
+ * |                           |
+ * |          TOPBAR           |
+ * |___________________________|
+ * |                           |
+ * |                           |
+ * |         CONTENT           |
+ * |                           |
+ * |___________________________|
+ *
+ */
+.content-1col {
+  padding-top: $header-height;
 
   @include mobile {
-    margin: 0px;
+    padding-top: 0;
+  }
+}
 
-    /* Positioning */
-    position: unset;
-    width: unset;
+/*
+ * Layout:
+ *  ___________________________
+ * |                           |
+ * |          TOPBAR           |
+ * |___________________________|
+ * |         |                 |
+ * |         |                 |
+ * | SIDEBAR |     CONTENT     |
+ * |         |                 |
+ * |_________|_________________|
+ *
+ * Topbar:  position is fixed
+ * Sidebar: position is fixed
+ * Content: default text where padding
+ *          is used to prevent overlap
+ *
+ *
+ *  Content contains 'post' which centers
+ *  the main body.
+ *
+ *  By default, the padding and margins are added
+ *  on top of the object's width. Ways to get around:
+ *
+ *    1) Add an extra div that does padding/margins
+ *       (used here).
+ *    2) Use the CSS: box-sizing: 'border-box'
+ */
+
+/* Split Page: Content
+ * "content" encloses "page" and
+ * "page" encloses "post" */
+.content-2col {
+  display: block;
+  padding-top: $header-height;
+  padding-left: $sidebar-width;
+
+  @include mobile {
+    padding: 0;
   }
 }
 
@@ -36,8 +72,7 @@
   display: block;
   vertical-align: top;
   width: $sidebar-width;
-  padding: $pad;
-  padding-top: $header-height + $pad;
+  padding-top: $header-height;
 
   /* Positioning */
   position: fixed;
@@ -47,7 +82,7 @@
   overflow: auto;
 
   /* Decorations */
-  border-right: 1px solid #ddd;
+  border-right: 1px solid $theme-sep;
 
   ul {
     list-style-type: none;
@@ -62,6 +97,27 @@
   }
 }
 
+/* Sub-containers for correct margins */
+.content-padding {
+  margin: 0 auto;
+  padding: $pad;
+  max-width: $page-width;
+
+  @include mobile {
+    padding: $pad-mobile;
+  }
+}
+
+.sidebar-padding {
+  padding: $pad;
+  margin: 0;
+
+  @include mobile {
+    padding: $pad-mobile;
+  }
+}
+
+/* Align sidebar elements */
 .sidebar .toc {
   padding: 0;
   margin: 0;

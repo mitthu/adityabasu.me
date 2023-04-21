@@ -48,6 +48,8 @@ When changing the **theme**, verify that the following pages look okay:
 * [/blog/2020/03/kgdboc-setup](/blog/2020/03/kgdboc-setup)
 * [/blog/2019/06/pci-quirks](/blog/2019/06/pci-quirks)
 
+In Firefox, validate the responsive design of the pages for mobile phones using `Ctrl+Shift+M`.
+
 # Table of Contents (toc)
 
 [TOC Documentation](https://github.com/toshimaru/jekyll-toc) is here.

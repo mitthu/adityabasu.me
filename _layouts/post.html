@@ -3,33 +3,37 @@ layout: default
 ---
 
 <aside class="sidebar">
-  <h1 class="title">
-    <a href="#">{{  page.title }}</a>
-  </h1>
+  <div class="sidebar-padding">
+    <h1 class="title">
+      <a href="#">{{  page.title }}</a>
+    </h1>
 
-  <div class="date">
-    Published on {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
-  {% toc %}
-</aside>
-
-<div class="content">
-  <article class="post">
-    <h1 class="title mobile-only">{{ page.title }}</h1>
-
-    <div class="date mobile-only">
+    <div class="date">
       Published on {{ page.date | date: "%B %e, %Y" }}
     </div>
 
-    <div class="entry">
-      {{ content | toc }}
-    </div>
+    {% toc %}
+  </div>
+</aside>
 
-    <br />
-    <a href="{{ site.baseurl }}/">← Back to homepage</a>
-    <br />
-    <br />
-    {% include disqus.html disqus_identifier=page.disqus_identifier %}
-  </article>
+<div class="content-2col">
+  <div class="content-padding">
+    <article class="post">
+      <h1 class="title mobile-only">{{ page.title }}</h1>
+
+      <div class="date mobile-only">
+        Published on {{ page.date | date: "%B %e, %Y" }}
+      </div>
+
+      <div class="entry">
+        {{ content | toc }}
+      </div>
+
+      <br />
+      <a href="{{ site.baseurl }}/">← Back to homepage</a>
+      <br />
+      <br />
+      {% include disqus.html disqus_identifier=page.disqus_identifier %}
+    </article>
+  </div>
 </div>
