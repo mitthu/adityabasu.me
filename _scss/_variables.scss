@@ -40,10 +40,6 @@ $lato: 'Lato', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 $gentium: 'Gentium Book Basic', serif;
 
- * END(Styles)
- */
-
-/* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 $sourcesanspro: 'Source Sans Pro', sans-serif;
 
@@ -51,6 +47,14 @@ $sourcesanspro: 'Source Sans Pro', sans-serif;
 $robotomono: 'Roboto Mono',;
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+$spacegrotesk: 'Space Grotesk';
+
+ * END(Styles)
+ */
+
+/* Google fonts: Loaded via _layouts/default.html */
+$sourcesanspro: 'Source Sans Pro', sans-serif;
+$robotomono: 'Roboto Mono',;
 $spacegrotesk: 'Space Grotesk';
 
 /* Default fonts */
