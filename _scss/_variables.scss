@@ -53,15 +53,14 @@ $spacegrotesk: 'Space Grotesk';
  */
 
 /* Google fonts: Loaded via _layouts/default.html */
-$sourcesanspro: 'Source Sans Pro', sans-serif;
-$robotomono: 'Roboto Mono',;
+$sourcesans3: 'Source Sans 3';
+$robotomono: 'Roboto Mono';
 $spacegrotesk: 'Space Grotesk';
 
 /* Default fonts */
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
-$bitstream: 'Bitstream Vera Sans Mono','Courier', monospace;
+$sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif: Georgia, serif;
+$mono: 'Bitstream Vera Sans Mono','Courier', monospace;
 
 
 /* Current theme */
@@ -88,11 +87,11 @@ $theme-tbl-sep:     $theme-sep;
 $theme-tbl-border:  $darkGray;
 
 /* Font family */
-$font:         $sourcesanspro, $helvetica;
-$font-img:     $sourcesanspro, $helvetica;
-$font-excerpt: $sourcesanspro, $helvetica;
-$font-head:    $spacegrotesk, $sourcesanspro, $helvetica;
-$font-mono:    $robotomono, $bitstream;
+$font:         $sourcesans3,  $sans-serif;
+$font-img:     $sourcesans3,  $sans-serif;
+$font-excerpt: $sourcesans3,  $sans-serif;
+$font-head:    $spacegrotesk, $sans-serif;
+$font-mono:    $robotomono,   $mono;
 
 /* Font size */
 $font-size-normal:       18px;
