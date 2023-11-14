@@ -53,13 +53,16 @@ Additionally, I also have development experience with Unix-like kernels.
 • [Google Scholar](https://scholar.google.com/citations?user=NjtxVEoAAAAJ)
 • [dblp](https://dblp.uni-trier.de/pid/154/9562.html)
 
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////// -->
 ## Education
+<!-- /////////////////////////////////////////////////////////////////////////////////////// -->
 
 - **PhD Candidate** in _Computer Science_
   at <a href="https://www.psu.edu/">Penn State (USA)</a><br />
   <small>[
     GPA = 3.85 (of 4)
-    | Expected 2023
+    | Expected 2024
   ]</small>
 
 - **B.Tech.** in _Information & Communication Technology_
@@ -71,6 +74,139 @@ Additionally, I also have development experience with Unix-like kernels.
   ]</small>
 
 
+<!-- /////////////////////////////////////////////////////////////////////////////////////// -->
+## Work Experience
+<!-- /////////////////////////////////////////////////////////////////////////////////////// -->
+
+- **Research Intern**             at _Microsoft Research_ `// Summer 2022`
+- **Software Engineering Intern** at _Google_             `// Summer 2019`
+- **Research Intern**             at _NIO_                `// Summer 2018`
+- **System Operations Engineer**  at _Media.net_          `// 2014-16`
+- **Software Developer Intern**   at _DAIICT_             `// Summer '13 & '14`
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////// -->
+## Skills
+<!-- /////////////////////////////////////////////////////////////////////////////////////// -->
+
+- **10k SLOC:**
+    C •
+    Python •
+    Golang •
+    bash •
+    LaTeX (macros) •
+    HTML
+- **5k --- 10k SLOC:**
+    x86 Assembly •
+    C++ •
+    Java •
+    BPF •
+    Django •
+    Puppet •
+    Ansible •
+    CSS
+- **Utilities:**
+    make •
+    git •
+    Docker •
+    strace •
+    gdb •
+    Protocol Buffers
+- **Others:**
+    Linux •
+    Mac OS X •
+    Markdown
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////// -->
+## Research Artifacts
+<!-- /////////////////////////////////////////////////////////////////////////////////////// -->
+
+* [Collision detector](https://github.com/mitthu/name-confusion)
+  identifies name collisions from Auditd traces (FAST '23)
+  `Golang, bash`
+* [Nimble-aware Hadoop](https://github.com/mitthu/hadoop-nimble)
+  detects rollback attacks on HDFS (OSDI '23)
+  `Java, Protobuf`
+* [Printable Shellcode Compiler](https://github.com/dhrumil29699/Printable-Encoder)
+  transforms shellcode from binary to printable
+  `C, x86 asm`
+* [Alpha Loader](https://bitbucket.org/mitthu/alpha_loaders/src)
+  transforms shellcode from binary to compact ASCII
+  `C, x86 asm, Python, Bash`
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////// -->
+## Publications
+<!-- /////////////////////////////////////////////////////////////////////////////////////// -->
+
+7.  **TALISMAN: Tamper Analysis for Reference Monitors**<br/>
+    Frank Capobianco, Quan Zhou, _Aditya Basu_, Trent Jaeger, Danfeng Zhang.
+    In _Network and Distributed System Security Symposium (NDSS)_, 2024.<br/>
+    <small>[
+        to appear
+    ]</small>
+
+6.  **Unsafe at Any Copy: Name Collisions from Mixing Case Sensitivities**<br/>
+    _Aditya Basu_, Jack Sampson, Zhiyun Qian, Trent Jaeger.
+    In _21<sup>th</sup> USENIX Conference on File and Storage Technologies (FAST)_, 2023.<br/>
+    <small>[
+        Awarded *USENIX Student Grant*
+        | [link](https://www.usenix.org/conference/fast23/presentation/basu)
+        | [ppt](https://www.usenix.org/sites/default/files/conference/protected-files/fast23_slides_basu.pdf)
+        | [code](https://github.com/mitthu/name-confusion/)
+        | acceptance rate = 23%, or 28/122
+    ]</small>
+
+5.  **Nimble: Rollback Protection for Confidential Cloud Services**<br/>
+	Sebastian Angel, _Aditya Basu_, Weidong Cui, Trent Jaeger, Stella Lau, Srinath Setty, Sudheesh Singanamalla.
+    In _17<sup>th</sup> USENIX Symposium on Operating Systems Design and Implementation (OSDI)_, 2023.<br/>
+    <small>[
+        [link](https://www.usenix.org/conference/osdi23/presentation/angel)
+        | [code-hdfs](https://github.com/mitthu/hadoop-nimble/)
+        | [code-nimble](https://github.com/microsoft/Nimble/)
+        | acceptance rate = 19.6%, or 50/255
+    ]</small>
+
+4.  **Automatic Generation of Compact Printable Shellcodes for x86**<br/>
+    Dhrumil Patel, _Aditya Basu_, Anish Mathuria.
+    In _14<sup>th</sup> USENIX Workshop on Offensive Technologies (WOOT)_, 2020.<br/>
+    <small>[
+        [link](https://www.usenix.org/conference/woot20/presentation/patel)
+        | [ppt](https://www.usenix.org/system/files/woot20-paper17-slides-basu.pdf)
+        | [code](https://github.com/dhrumil29699/Printable-Encoder/)
+        | acceptance rate = 33.33%, or 12/36
+    ]</small>
+
+3.  **Hardware Assisted Buffer Protection Mechanisms for Embedded RISC-V**<br/>
+    Asmit De, _Aditya Basu_, Swaroop Ghosh, Trent Jaeger.
+    In _IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems_, 2020.<br/>
+    <small>[
+        [doi](http://dx.doi.org/10.1109/TCAD.2020.2984407)
+        | impact factor = 2.168
+    ]</small>
+
+2.  **FIXER: Flow Integrity Extensions in Embedded RISC-V**<br/>
+    Asmit De, _Aditya Basu_, Swaroop Ghosh and Trent Jaeger.
+    In _Proceedings of Design, Automation and Test in Europe (DATE)_, 2019.<br/>
+    <small>[
+        [doi](http://dx.doi.org/10.23919/DATE.2019.8714980)
+        | acceptance rate = 24%
+    ]</small>
+
+1.   **Automatic Generation of Compact Alphanumeric Shellcodes for x86**<br/>
+    _Aditya Basu_, Anish Mathuria, Nagendra Chowdary.
+    In _Proceedings of 10<sup>th</sup> International Conference on Information Systems Security (ICISS)_, 2014.<br/>
+    <small>[
+        [doi](http://dx.doi.org/10.1007/978-3-319-13841-1_22)
+        | <a href="{{site.assets}}/research/alpha-x86-ppt.pdf">ppt</a>
+        | [code](https://bitbucket.org/mitthu/alpha_loaders/src)
+        | acceptance rate = 19%, or 25/129
+    ]</small>
+{: reversed="reversed"}
+
+
+<!-- /////////////////////// EDUCATION /////////////////////////////////////////////// -->
 <!-- CV Style Education
 <style type="text/css">
     ul.exp {
@@ -111,61 +247,8 @@ GPA = 9.52 (of 10) in major; 8.55 overall
 <p></p>
 -->
 
-## Publications
 
-0.  **Unsafe at Any Copy: Name Collisions from Mixing Case Sensitivities**<br/>
-    _Aditya Basu_, Jack Sampson, Zhiyun Qian, Trent Jaeger.
-    In _21<sup>th</sup> USENIX Conference on File and Storage Technologies (FAST)_, 2023.<br/>
-    <small>[
-        Awarded **USENIX Student Grant**
-        | [link](https://www.usenix.org/conference/fast23/presentation/basu)
-    ]</small>
-
-0.  **Automatic Generation of Compact Printable Shellcodes for x86**<br/>
-    Dhrumil Patel, _Aditya Basu_, Anish Mathuria.
-    In _14<sup>th</sup> USENIX Workshop on Offensive Technologies (WOOT)_, 2020.<br/>
-    <small>[
-        [link](https://www.usenix.org/conference/woot20/presentation/patel)
-        | [ppt](https://www.usenix.org/system/files/woot20-paper17-slides-basu.pdf)
-        | [code](https://github.com/dhrumil29699/Printable-Encoder/)
-        | acceptance rate = 33.33%, or 12/36
-    ]</small>
-
-0.  **Hardware Assisted Buffer Protection Mechanisms for Embedded RISC-V**<br/>
-    Asmit De, _Aditya Basu_, Swaroop Ghosh, Trent Jaeger.
-    In _IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems_, 2020.<br/>
-    <small>[
-        [doi](http://dx.doi.org/10.1109/TCAD.2020.2984407)
-        | impact factor = 2.168
-    ]</small>
-
-0.  **FIXER: Flow Integrity Extensions in Embedded RISC-V**<br/>
-    Asmit De, _Aditya Basu_, Swaroop Ghosh and Trent Jaeger.
-    In _Proceedings of Design, Automation and Test in Europe (DATE)_, 2019.<br/>
-    <small>[
-        [doi](http://dx.doi.org/10.23919/DATE.2019.8714980)
-        | acceptance rate = 24%
-    ]</small>
-
-0.   **Automatic Generation of Compact Alphanumeric Shellcodes for x86**<br/>
-    _Aditya Basu_, Anish Mathuria, Nagendra Chowdary.
-    In _Proceedings of 10<sup>th</sup> International Conference on Information Systems Security (ICISS)_, 2014.<br/>
-    <small>[
-        [doi](http://dx.doi.org/10.1007/978-3-319-13841-1_22)
-        | <a href="{{site.assets}}/research/alpha-x86-ppt.pdf">ppt</a>
-        | [code](https://bitbucket.org/mitthu/alpha_loaders/src)
-        | acceptance rate = 19%, or 25/129
-    ]</small>
-{: reversed="reversed"}
-
-
-## Career
-
-- **Research Intern**             at _Microsoft Research_ `// Summer 2022`
-- **Software Engineering Intern** at _Google_             `// Summer 2019`
-- **Research Intern**             at _NIO_                `// Summer 2018`
-- **System Operations Engineer**  at _Media.net_          `// 2014-16`
-- **Software Developer Intern**   at _DAIICT_             `// Summer '13 & '14`
+<!-- ///////////////////////////// CAREER ///////////////////////////////////////////// -->
 
 <!-- Tabular career
 <style type="text/css">
@@ -184,6 +267,8 @@ GPA = 9.52 (of 10) in major; 8.55 overall
 ||<span class="gap" /> ||
 --->
 
+
+<!-- /////////////////////////////////////////////////////////////////////////////// -->
 
 <!-- Full description (in CV)
 <ul class="exp">
@@ -253,31 +338,8 @@ OBD-II diagnostics port.
 
 -->
 
-## Skills
 
-- **10k SLOC:** <span class="gap" />
-    C •
-    Python •
-    Golang •
-    bash •
-    LaTeX (macros) •
-    HTML
-- **5k --- 10k SLOC:** <span class="gap" />
-    Django •
-    Puppet •
-    Ansible •
-    Java •
-    CSS
-- **Utilities:** <span class="gap" />
-    make •
-    git •
-    Docker •
-    strace •
-    gdb
-- **Others:** <span class="gap" />
-    Linux •
-    Mac OS X •
-    Markdown
+<!-- //////////////////////////////// SKILLS /////////////////////////////////////////////// -->
 
 <!-- Using a table
 <style type="text/css">
