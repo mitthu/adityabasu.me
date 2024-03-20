@@ -144,7 +144,7 @@ Additionally, I also have development experience with Unix-like kernels.
     Frank Capobianco, Quan Zhou, _Aditya Basu_, Trent Jaeger, Danfeng Zhang.
     In _Network and Distributed System Security Symposium (NDSS)_, 2024.<br/>
     <small>[
-        to appear
+        [link](https://www.ndss-symposium.org/ndss-paper/talisman-tamper-analysis-for-reference-monitors/)
     ]</small>
 
 6.  **Unsafe at Any Copy: Name Collisions from Mixing Case Sensitivities**<br/>
