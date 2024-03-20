@@ -145,6 +145,7 @@ Additionally, I also have development experience with Unix-like kernels.
     In _Network and Distributed System Security Symposium (NDSS)_, 2024.<br/>
     <small>[
         [link](https://www.ndss-symposium.org/ndss-paper/talisman-tamper-analysis-for-reference-monitors/)
+        | acceptance rate = 15%, or 104/694
     ]</small>
 
 6.  **Unsafe at Any Copy: Name Collisions from Mixing Case Sensitivities**<br/>
